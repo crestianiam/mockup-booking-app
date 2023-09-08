@@ -1,0 +1,38 @@
+[
+    {
+        "id": 1,
+        "imgUrl": "/images/north.jpg",
+        "location": "North",
+        "airports": [
+            "Palermo",
+            "Messina"
+        ]
+    },
+    {
+        "id": 2,
+        "imgUrl": "/images/east.jpg",
+        "location": "East",
+        "airports": [
+            "Catania",
+            "Siracusa"
+        ]
+    },
+    {
+        "id": 3,
+        "imgUrl": "/images/south.jpg",
+        "location": "South",
+        "airports": [
+            "Ragusa",
+            "Siracusa"
+        ]
+    },
+    {
+        "id": 4,
+        "imgUrl": "/images/west.jpg",
+        "location": "West",
+        "airports": [
+            "Agrigento",
+            "Marsala"
+        ]
+    }
+]

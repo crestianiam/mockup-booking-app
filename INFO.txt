@@ -1,0 +1,17 @@
+# Colors
+- black #333333
+- yellow-gold #f0be14
+- grey #cccccc
+- grey light #f9f9f9
+- blue #64b4fa
+- blue light #c1e1fd
+
+# Fonts
+Averta regular
+https://www.dafontfree.io/averta-font/
+
+NoeDisplay bold
+https://fontsfree.net/noe-display-bold-font-download.html
+
+# Icons
+Any icon library will do, example: https://fontawesome.com/

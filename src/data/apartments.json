@@ -1,0 +1,179 @@
+[
+  {
+    "id": 1,
+    "groupId": 1,
+    "imgUrl": "/images/1.jpg",
+    "name": "Villa sul Mare",
+    "city": "Lentini",
+    "province": "Siracusa",
+    "seats": 7,
+    "bedrooms": 3,
+    "bathrooms": 2,
+    "pricePerNight": 250,
+    "checkInDate": "2023-09-15",
+    "checkOutDate": "2023-09-22",
+    "villaIdeas": [
+      "Pool",
+      "Seaview",
+      "Large",
+      "Family"
+    ],
+    "experiences": [
+      "Cooking experiences",
+      "Sicily outdoors"
+    ]
+  },
+  {
+    "id": 2,
+    "groupId": 2,
+    "imgUrl": "/images/2.jpg",
+    "name": "Luxury Oasis",
+    "city": "Taormina",
+    "province": "Messina",
+    "seats": 8,
+    "bedrooms": 4,
+    "bathrooms": 3,
+    "pricePerNight": 320,
+    "checkInDate": "2023-09-20",
+    "checkOutDate": "2023-09-27",
+    "villaIdeas": [
+      "Pool",
+      "Luxury",
+      "Large"
+    ],
+    "experiences": [
+      "Sicily outdoors"
+    ]
+  },
+  {
+    "id": 3,
+    "groupId": 3,
+    "imgUrl": "/images/3.jpg",
+    "name": "Seaview Paradise",
+    "city": "Ragusa",
+    "province": "Ragusa",
+    "seats": 2,
+    "bedrooms": 1,
+    "bathrooms": 1,
+    "pricePerNight": 130,
+    "checkInDate": "2023-09-15",
+    "checkOutDate": "2023-09-22",
+    "villaIdeas": [
+      "Pool",
+      "Couples"
+    ],
+    "experiences": [
+      "Cooking experiences"
+    ]
+  },
+  {
+    "id": 4,
+    "groupId": 2,
+    "imgUrl": "/images/4.jpg",
+    "name": "Family Getaway",
+    "city": "Cefalù",
+    "province": "Palermo",
+    "seats": 2,
+    "bedrooms": 1,
+    "bathrooms": 1,
+    "pricePerNight": 110,
+    "checkInDate": "2023-09-20",
+    "checkOutDate": "2023-09-27",
+    "villaIdeas": [
+      "Pool",
+      "Couples"
+    ],
+    "experiences": [
+      "Sicily outdoors"
+    ]
+  },
+  {
+    "id": 5,
+    "groupId": 1,
+    "imgUrl": "/images/6.jpg",
+    "name": "Countryside Retreat",
+    "city": "Noto",
+    "province": "Siracusa",
+    "seats": 4,
+    "bedrooms": 2,
+    "bathrooms": 1,
+    "pricePerNight": 2390,
+    "checkInDate": "2023-09-15",
+    "checkOutDate": "2023-09-22",
+    "villaIdeas": [
+      "Seaview",
+      "Couples",
+      "Family"
+    ],
+    "experiences": [
+      "Fantastic garden",
+      "Horseback excursions"
+    ]
+  },
+  {
+    "id": 6,
+    "groupId": 4,
+    "imgUrl": "/images/6.jpg",
+    "name": "Tranquil Retreat",
+    "city": "Mazara del Vallo",
+    "province": "Trapani",
+    "seats": 4,
+    "bedrooms": 2,
+    "bathrooms": 1,
+    "pricePerNight": 220,
+    "checkInDate": "2023-09-20",
+    "checkOutDate": "2023-09-27",
+    "villaIdeas": [
+      "Pool",
+      "Couples",
+      "Family"
+    ],
+    "experiences": [
+      "Sicily outdoors"
+    ]
+  },
+  {
+    "id": 7,
+    "groupId": 3,
+    "imgUrl": "/images/7.jpg",
+    "name": "Hillside Hideaway",
+    "city": "Modica",
+    "province": "Ragusa",
+    "seats": 6,
+    "bedrooms": 3,
+    "bathrooms": 2,
+    "pricePerNight": 310,
+    "checkInDate": "2023-09-15",
+    "checkOutDate": "2023-09-22",
+    "villaIdeas": [
+      "Seaview",
+      "Family",
+      "Large"
+    ],
+    "experiences": [
+      "Fantastic garden",
+      "Horseback excursions"
+    ]
+  },
+  {
+    "id": 8,
+    "groupId": 4,
+    "imgUrl": "/images/8.jpg",
+    "name": "Cozy Cabin",
+    "city": "Castellammare del Golfo",
+    "province": "Trapani",
+    "seats": 4,
+    "bedrooms": 2,
+    "bathrooms": 1,
+    "pricePerNight": 250,
+    "checkInDate": "2023-09-20",
+    "checkOutDate": "2023-09-27",
+    "villaIdeas": [
+      "Couples",
+      "Family"
+    ],
+    "experiences": [
+      "Horseback excursions"
+    ]
+  }
+]
