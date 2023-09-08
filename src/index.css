@@ -1,22 +1,46 @@
+@font-face {
+  font-family: 'AvertaRegular';
+  src: url('../fonts/averta-regular.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'NeoDisplayBold';
+  src: url('../fonts/neodisplay-bold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: bold;
+}
+
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
+
+  --font-regular: 'AvertaRegular', sans-serif;
+  --font-bold: 'NeoDisplayBold', sans-serif;
+
+  --clr-black: #333333;
+  --clr-yellow: #f0be14 --clr-grey: #cccccc;
+  --clr-grey-light: #f9f9f9;
+  --clr-blue: #64b4fa;
+  --clr-blue-light: #c1e1fd;
 }
 
 body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-height: 100vh;
+  font-family: var(--font-regular), sans-serif;
+}
+
+.bold-text {
+  font-family: var(--font-bold), sans-serif;
+  font-weight: bold;
+}
+
+.title-paragraph {
+  font-family: var(--font-bold), sans-serif;
+  font-weight: bold;
+  font-size: x-large;
 }

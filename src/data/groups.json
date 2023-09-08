@@ -6,7 +6,8 @@
         "airports": [
             "Palermo",
             "Messina"
-        ]
+        ],
+        "total": "2"
     },
     {
         "id": 2,
@@ -15,7 +16,8 @@
         "airports": [
             "Catania",
             "Siracusa"
-        ]
+        ],
+        "total": "2"
     },
     {
         "id": 3,
@@ -24,7 +26,8 @@
         "airports": [
             "Ragusa",
             "Siracusa"
-        ]
+        ],
+        "total": "2"
     },
     {
         "id": 4,
@@ -33,6 +36,7 @@
         "airports": [
             "Agrigento",
             "Marsala"
-        ]
+        ],
+        "total": "2"
     }
 ]
