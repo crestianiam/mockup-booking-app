@@ -1,2 +1,11 @@
 experiences: ["Cooking experiences", "Sicily outdoors",  "Fantastic garden", "Horseback excursion"]
 villaIdeas: ["Pool", "Luxury", "Couples", "Large", "Family" ]
+
+filter:{
+    villaIdeas:["Pool", "Luxury", "Couples", "Large", "Family" ],
+    experiences:[Cooking experiences", "Sicily outdoors",  "Fantastic garden", "Horseback excursion"]
+    location
+    totPeople
+    beedroms
+    pricerange
+}

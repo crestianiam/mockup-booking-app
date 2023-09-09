@@ -9,6 +9,7 @@ import Journal from "./pages/About"
 import Contact from "./pages/Contact"
 import Villas from "./pages/Villas"
 import Navbar from "./components/Navbar"
+import { FilterProvider } from "./context/FilterContext"
 
 const routesData = [
   { id: 0, path: '/', element: <Home /> },
@@ -21,27 +22,23 @@ const routesData = [
   { id: 7, path: '/contact', element: <Contact /> },
 ];
 
-
 function generateRoutes() {
   return routesData.map((route) => (
     <Route key={route.id} path={route.path} element={route.element} />
   ))
 }
 
-
 function App() {
 
   return (
-    <>
-      <Container>
+    <FilterProvider>
+      <Container className="mb-5">
         <Navbar />
         <Routes>
-          {routesData.map((route) => (
-            <Route key={route.id} path={route.path} element={route.element} />
-          ))}
+          {generateRoutes()}
         </Routes>
       </Container>
-    </>
+    </FilterProvider>
   )
 }
 

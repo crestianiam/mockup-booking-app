@@ -24,7 +24,8 @@
   --font-bold: 'NeoDisplayBold', sans-serif;
 
   --clr-black: #333333;
-  --clr-yellow: #f0be14 --clr-grey: #cccccc;
+  --clr-yellow: #f0be14;
+  --clr-grey: #cccccc;
   --clr-grey-light: #f9f9f9;
   --clr-blue: #64b4fa;
   --clr-blue-light: #c1e1fd;
@@ -43,4 +44,40 @@ body {
   font-family: var(--font-bold), sans-serif;
   font-weight: bold;
   font-size: x-large;
+}
+
+.clr-black {
+  color: var(--clr-black);
+}
+
+.clr-yellow {
+  color: var(--clr-yellow);
+}
+
+.clr-grey {
+  color: var(--clr-grey);
+}
+
+.clr-grey-light {
+  color: var(--clr-grey-light);
+}
+
+.clr-blue {
+  color: var(--clr-blue);
+}
+
+.clr-blue-light {
+  color: var(--clr-blue-light);
+}
+
+.bg-yellow {
+  background-color: var(--clr-yellow);
+}
+
+@media (max-width: 768px) {
+  .w-md-100 {
+    width: 100% !important;
+    position: fixed !important;
+    height: 100% !important;
+  }
 }

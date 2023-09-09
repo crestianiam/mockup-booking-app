@@ -3,7 +3,7 @@ import { Card } from 'react-bootstrap';
 
 const IconBox = ({ title, text, children }) => {
     return (
-        <Card >
+        <Card className='border-0'>
             {children}
             <Card.Body>
                 <Card.Title>{title}</Card.Title>

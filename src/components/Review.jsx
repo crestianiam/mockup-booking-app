@@ -5,12 +5,11 @@ const Review = ({ text, stars, author }) => {
 
     return (
         <section>
-            <div class="col-md-4 mb-0">
-                <h5 class="mt-3">{author}</h5>
-                <p class="px-xl-3">
-                    <i class="fas fa-quote-left pe-2"></i>{text}
+            <div className="col-md-4 mb-0">
+                <p className="fs-6 lh-1">
+                    <i className="fas fa-quote-left pe-2"></i>{text}
                 </p>
-                <h5 class="mt-3">{author}</h5>
+                <h5 className="mt-3">{author}</h5>
             </div>
         </section >
     );
