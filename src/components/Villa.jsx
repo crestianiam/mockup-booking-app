@@ -7,9 +7,10 @@ const Villa = ({ villa }) => {
             <Card.Img variant="top" src={villa.imgUrl} style={{ width: "100%", aspectRatio: "5/3" }} />
             <Card.Body>
                 <Card.Title>{villa.name}</Card.Title>
-                <Card.Subtitle className="mb-2 text-muted">{villa.city} {"(" + villa.province + ")"} - {"Location: " + villa.location}</Card.Subtitle>
+                <Card.Subtitle className="mb-2 text-muted">{villa.city} {"(" + villa.province + ")"} - {villa.location}</Card.Subtitle>
                 <Card.Subtitle className="mb-2 text-muted">From €{villa.pricePerNight}/night - €{villa.pricePerNight * 7}/week</Card.Subtitle>
-                <Card.Subtitle className="mb-2 text-muted">Seats: {villa.seats} - Bathrooms: {villa.bathrooms}</Card.Subtitle>
+                <Card.Subtitle className="mb-2 text-muted">Seats {villa.seats} - Bedrooms {villa.bedrooms} - Bathrooms {villa.bathrooms}</Card.Subtitle>
+                <Card.Subtitle className="mb-2 text-muted">From {villa.checkIn} To {villa.checkOut}</Card.Subtitle>
                 <Card.Subtitle className="mb-2 d-flex text-muted">
                     {villa.villaIdeas.map((idea, index) => {
                         return (

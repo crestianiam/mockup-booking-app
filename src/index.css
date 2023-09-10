@@ -74,6 +74,10 @@ body {
   background-color: var(--clr-yellow);
 }
 
+.bg-blue {
+  background-color: var(--clr-blue);
+}
+
 .w-md-100 {
   width: 50% !important;
   position: fixed !important;

@@ -10,8 +10,8 @@
     "bedrooms": 3,
     "bathrooms": 2,
     "pricePerNight": 250,
-    "checkInDate": "2023-09-15",
-    "checkOutDate": "2023-09-22",
+    "checkIn": "2023-08-15",
+    "checkOut": "2023-10-22",
     "villaIdeas": [
       "Pool",
       "Seaview",
@@ -20,7 +20,8 @@
     ],
     "experiences": [
       "Cooking experiences",
-      "Sicily outdoors"
+      "Sicily outdoors",
+      "Horseback excursion"
     ]
   },
   {
@@ -34,8 +35,8 @@
     "bedrooms": 4,
     "bathrooms": 3,
     "pricePerNight": 320,
-    "checkInDate": "2023-09-20",
-    "checkOutDate": "2023-09-27",
+    "checkIn": "2023-09-20",
+    "checkOut": "2023-09-27",
     "villaIdeas": [
       "Pool",
       "Luxury",
@@ -56,8 +57,8 @@
     "bedrooms": 1,
     "bathrooms": 1,
     "pricePerNight": 130,
-    "checkInDate": "2023-09-15",
-    "checkOutDate": "2023-09-22",
+    "checkIn": "2023-09-15",
+    "checkOut": "2023-09-27",
     "villaIdeas": [
       "Pool",
       "Couples"
@@ -77,8 +78,8 @@
     "bedrooms": 1,
     "bathrooms": 1,
     "pricePerNight": 110,
-    "checkInDate": "2023-09-20",
-    "checkOutDate": "2023-09-27",
+    "checkIn": "2023-09-20",
+    "checkOut": "2023-10-27",
     "villaIdeas": [
       "Pool",
       "Couples"
@@ -97,9 +98,9 @@
     "seats": 4,
     "bedrooms": 2,
     "bathrooms": 1,
-    "pricePerNight": 2390,
-    "checkInDate": "2023-07-15",
-    "checkOutDate": "2023-12-22",
+    "pricePerNight": 390,
+    "checkIn": "2023-07-15",
+    "checkOut": "2023-12-22",
     "villaIdeas": [
       "Seaview",
       "Couples",
@@ -107,7 +108,7 @@
     ],
     "experiences": [
       "Fantastic garden",
-      "Horseback excursions"
+      "Horseback excursion"
     ]
   },
   {
@@ -121,8 +122,8 @@
     "bedrooms": 2,
     "bathrooms": 1,
     "pricePerNight": 220,
-    "checkInDate": "2023-09-20",
-    "checkOutDate": "2023-09-27",
+    "checkIn": "2023-09-20",
+    "checkOut": "2023-09-27",
     "villaIdeas": [
       "Pool",
       "Couples",
@@ -143,8 +144,8 @@
     "bedrooms": 3,
     "bathrooms": 2,
     "pricePerNight": 310,
-    "checkInDate": "2023-09-15",
-    "checkOutDate": "2023-09-22",
+    "checkIn": "2023-09-15",
+    "checkOut": "2023-09-22",
     "villaIdeas": [
       "Seaview",
       "Family",
@@ -152,7 +153,7 @@
     ],
     "experiences": [
       "Fantastic garden",
-      "Horseback excursions"
+      "Horseback excursion"
     ]
   },
   {
@@ -166,14 +167,189 @@
     "bedrooms": 2,
     "bathrooms": 1,
     "pricePerNight": 250,
-    "checkInDate": "2023-09-20",
-    "checkOutDate": "2023-09-27",
+    "checkIn": "2023-09-20",
+    "checkOut": "2023-09-27",
     "villaIdeas": [
       "Couples",
       "Family"
     ],
     "experiences": [
-      "Horseback excursions"
+      "Horseback excursion"
+    ]
+  },
+  {
+    "id": 9,
+    "location": "West Sicily",
+    "imgUrl": "/images/1.jpg",
+    "name": "Sunny Villa",
+    "city": "Palermo",
+    "province": "Palermo",
+    "seats": 6,
+    "bedrooms": 3,
+    "bathrooms": 2,
+    "pricePerNight": 180,
+    "checkIn": "2023-08-15",
+    "checkOut": "2023-08-22",
+    "villaIdeas": [
+      "Luxury",
+      "Family",
+      "Large"
+    ],
+    "experiences": [
+      "Cooking experiences",
+      "Fantastic garden"
+    ]
+  },
+  {
+    "id": 10,
+    "location": "North Sicily",
+    "imgUrl": "/images/2.jpg",
+    "name": "Seafront Retreat",
+    "city": "Cefalù",
+    "province": "Palermo",
+    "seats": 8,
+    "bedrooms": 4,
+    "bathrooms": 3,
+    "pricePerNight": 350,
+    "checkIn": "2023-08-25",
+    "checkOut": "2023-10-02",
+    "villaIdeas": [
+      "Pool",
+      "Large",
+      "Family"
+    ],
+    "experiences": [
+      "Sicily outdoors"
+    ]
+  },
+  {
+    "id": 11,
+    "location": "East Sicily",
+    "imgUrl": "/images/3.jpg",
+    "name": "Mountain Hideaway",
+    "city": "Taormina",
+    "province": "Messina",
+    "seats": 4,
+    "bedrooms": 2,
+    "bathrooms": 1,
+    "pricePerNight": 220,
+    "checkIn": "2023-10-05",
+    "checkOut": "2023-10-12",
+    "villaIdeas": [
+      "Large",
+      "Family"
+    ],
+    "experiences": [
+      "Fantastic garden"
+    ]
+  },
+  {
+    "id": 12,
+    "location": "South Sicily",
+    "imgUrl": "/images/4.jpg",
+    "name": "Beachfront Paradise",
+    "city": "Syracuse",
+    "province": "Syracuse",
+    "seats": 2,
+    "bedrooms": 1,
+    "bathrooms": 2,
+    "pricePerNight": 75,
+    "checkIn": "2023-10-18",
+    "checkOut": "2023-10-25",
+    "villaIdeas": [
+      "Couples",
+      "Family"
+    ],
+    "experiences": [
+      "Horseback excursion"
+    ]
+  },
+  {
+    "id": 13,
+    "location": "West Sicily",
+    "imgUrl": "/images/5.jpg",
+    "name": "Rustic Cottage",
+    "city": "Marsala",
+    "province": "Trapani",
+    "seats": 4,
+    "bedrooms": 2,
+    "bathrooms": 1,
+    "pricePerNight": 160,
+    "checkIn": "2023-11-01",
+    "checkOut": "2023-11-08",
+    "villaIdeas": [
+      "Pool",
+      "Luxury",
+      "Family",
+      "Couples"
+    ],
+    "experiences": [
+      "Cooking experiences",
+      "Fantastic garden"
+    ]
+  },
+  {
+    "id": 14,
+    "location": "North Sicily",
+    "imgUrl": "/images/6.jpg",
+    "name": "Hillside Villa",
+    "city": "Milazzo",
+    "province": "Messina",
+    "seats": 8,
+    "bedrooms": 4,
+    "bathrooms": 3,
+    "pricePerNight": 300,
+    "checkIn": "2023-11-15",
+    "checkOut": "2023-11-22",
+    "villaIdeas": [
+      "Couples",
+      "Family"
+    ],
+    "experiences": [
+      "Sicily outdoors"
+    ]
+  },
+  {
+    "id": 15,
+    "location": "East Sicily",
+    "imgUrl": "/images/7.jpg",
+    "name": "Elegant Mansion",
+    "city": "Catania",
+    "province": "Catania",
+    "seats": 10,
+    "bedrooms": 5,
+    "bathrooms": 4,
+    "pricePerNight": 415,
+    "checkIn": "2023-12-05",
+    "checkOut": "2023-12-12",
+    "villaIdeas": [
+      "Large",
+      "Family"
+    ],
+    "experiences": [
+      "Fantastic garden",
+      "Sicily outdoors"
+    ]
+  },
+  {
+    "id": 16,
+    "location": "South Sicily",
+    "imgUrl": "/images/8.jpg",
+    "name": "Cozy Cabin",
+    "city": "Castellammare del Golfo",
+    "province": "Trapani",
+    "seats": 4,
+    "bedrooms": 2,
+    "bathrooms": 1,
+    "pricePerNight": 175,
+    "checkIn": "2023-12-20",
+    "checkOut": "2023-12-27",
+    "villaIdeas": [
+      "Couples",
+      "Family"
+    ],
+    "experiences": [
+      "Horseback excursion"
     ]
   }
 ]

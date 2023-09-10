@@ -4,8 +4,9 @@ import { useFilter } from "../context/FilterContext"
 import Select from "react-select"
 import { villaIdeasList, experiencesList, locationsList } from "../data/lists"
 
-const Filter = ({ isOpen }) => {
+const Filter = () => {
     const {
+        isOpen,
         toggleVillaIdea,
         toggleExperience,
         updateLocation,
@@ -34,19 +35,18 @@ const Filter = ({ isOpen }) => {
             </Offcanvas.Header>
             <Offcanvas.Body>
                 {/* villa ideas */}
-                <div className="mb-3">
+                <div className="mb-3 text-center">
                     {villaIdeasList.map((idea) => (
                         <Button
                             key={idea}
                             variant={tempFilterValues.villaIdeas.includes(idea) ? "primary" : "outline-primary"}
                             onClick={() => toggleVillaIdea(idea)}
-                            className="m-2"
+                            className="mt-2 border-0  rounded-0"
                         >
                             {idea}
                         </Button>
                     ))}
                 </div>
-
                 {/* experiences */}
                 <Form.Group className="mb-3">
                     <Form.Label>Experiences</Form.Label>
@@ -66,7 +66,6 @@ const Filter = ({ isOpen }) => {
                         }}
                     />
                 </Form.Group>
-
                 {/* location */}
                 <Form.Group className="mb-3">
                     <Form.Select
@@ -80,7 +79,6 @@ const Filter = ({ isOpen }) => {
                         ))}
                     </Form.Select>
                 </Form.Group>
-
                 {/* check-in e check-out */}
                 <InputGroup className="mb-3">
                     <Form.Control
@@ -96,7 +94,6 @@ const Filter = ({ isOpen }) => {
                         onChange={(e) => updateCheckOut(e.target.value)}
                     />
                 </InputGroup>
-
                 {/* adulti, bambini, infanti e camere da letto */}
                 <InputGroup className="mb-3">
                     <InputGroup.Text>Adults</InputGroup.Text>
@@ -128,7 +125,6 @@ const Filter = ({ isOpen }) => {
                         <option value={5}>5+ Bedrooms</option>
                     </Form.Select>
                 </InputGroup>
-
                 {/* min e max price */}
                 <InputGroup className="mb-3">
                     <InputGroup.Text>Min Price</InputGroup.Text>
@@ -143,16 +139,18 @@ const Filter = ({ isOpen }) => {
                         type="number"
                         value={tempFilterValues.maxPrice}
                         onChange={(e) => updateMaxPrice(e.target.value)}
+                        min={50}
                     />
                 </InputGroup>
-
                 {/* Apply Filter e Reset Filter */}
                 <div className="text-center">
-                    <Button variant="primary" onClick={applyFilter} className="mb-3">
+                    <Button variant="primary" onClick={applyFilter} className="mb-3 bg-yellow rounded-0 border-0"
+                        disabled={(tempFilterValues.checkIn > tempFilterValues.checkOut) || ((tempFilterValues.adults + tempFilterValues.childrens + tempFilterValues.infants) <= 0) || (tempFilterValues.minPrice >
+                            tempFilterValues.maxPrice)}>
                         Apply Filter
                     </Button>
                     <br />
-                    <Button variant="secondary" onClick={resetFilterValues}>
+                    <Button variant="secondary" onClick={resetFilterValues} className="rounded-0 border-0">
                         Reset Filter
                     </Button>
                 </div>

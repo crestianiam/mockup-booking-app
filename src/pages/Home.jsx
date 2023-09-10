@@ -28,7 +28,7 @@ const Home = () => {
                     </Col>
                 </Row>
             </MyContainer>
-            <Button as={NavLink} to="/villas" className="bg-yellow rounded-0" style={{ border: "none" }}>
+            <Button as={NavLink} to="/villas" className="bg-yellow rounded-0 border-0">
                 Villas In Sicily
             </Button>
             <div className='mt-5'></div>

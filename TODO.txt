@@ -6,3 +6,6 @@ controlla date e functions
 menu space between e vedi su mobile 
 test su telefono
 filtro bedroom 6+ e lista bedrooms
+readme file todo 
+aggiungere al repository p&d
+colori e stili

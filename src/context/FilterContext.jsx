@@ -5,7 +5,7 @@ import { getTodayDate, getTomorrowDate } from "../utilities/functions"
 const defaultFilterValues = {
     villaIdeas: [],
     experiences: [],
-    location: 'South Sicily',
+    location: 'North Sicily',
     checkIn: getTodayDate(),
     checkOut: getTomorrowDate(),
     adults: 2,
@@ -36,11 +36,6 @@ export function FilterProvider({ children }) {
         setTempFilterValues(filterValues)
     }
 
-    const applyTempFilter = () => {
-        setFilterValues(tempFilterValues)
-        setIsOpen(false)
-    }
-
     const cancelTempFilter = () => {
         setTempFilterValues(filterValues)
         setIsOpen(false)
@@ -62,7 +57,7 @@ export function FilterProvider({ children }) {
 
     const toggleExperience = (value) => {
         const updatedFilter = { ...tempFilterValues }
-        updatedFilter.experiences = value
+        updatedFilter.experiences = [...value]
         updateTempFilter(updatedFilter)
     }
 
@@ -137,6 +132,11 @@ export function FilterProvider({ children }) {
                 openFilter,
                 closeFilter,
                 filterValues,
+                applyFilter,
+                resetFilterValues,
+                tempFilterValues,
+                updateTempFilter,
+                cancelTempFilter,
                 toggleVillaIdea,
                 toggleExperience,
                 updateLocation,
@@ -147,17 +147,11 @@ export function FilterProvider({ children }) {
                 updateInfants,
                 updateMinPrice,
                 updateMaxPrice,
-                updateBedrooms,
-                resetFilterValues,
-                applyTempFilter,
-                cancelTempFilter,
-                updateTempFilter,
-                applyFilter,
-                tempFilterValues
+                updateBedrooms
             }}
         >
             {children}
-            <Filter isOpen={isOpen} />
+            <Filter />
         </FilterContext.Provider>
     )
 }
