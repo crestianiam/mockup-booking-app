@@ -1,11 +1,10 @@
 import React from 'react';
 import { Col, Image, Row, Button } from 'react-bootstrap'
 import MyContainer from '../components/MyContainer'
-import groups from "../data/groups.json"
-import MyImage from '../components/MyImage'
 import { NavLink } from 'react-router-dom'
-import ChooseList from '../components/ChooseList'
-import ReviewList from '../components/ReviewList'
+import Benefits from '../components/Benefits'
+import Locations from "../components/Locations"
+import Reviews from '../components/Reviews'
 
 const Home = () => {
     return (
@@ -36,7 +35,7 @@ const Home = () => {
                 Villas In Sicily
             </Button>
             <div className='mt-5'></div>
-            <ChooseList />
+            <Benefits />
             <div className='mt-5'></div>
             <MyContainer>
                 <h2 className='title-paragraph text-center'>
@@ -48,19 +47,9 @@ const Home = () => {
                 </p>
             </MyContainer>
             <div className='mt-5'></div>
-            <MyContainer>
-                <Row>
-                    {groups.map((group) => {
-                        return (
-                            <Col key={group.id} className='col-3'>
-                                <MyImage title={group.location} total={group.total} imgUrl={group.imgUrl} />
-                            </Col>
-                        )
-                    })}
-                </Row>
-            </MyContainer>
+            <Locations />
             <div className='mt-5'></div>
-            <ReviewList />
+            <Reviews />
         </MyContainer>
     );
 }

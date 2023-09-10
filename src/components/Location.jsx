@@ -1,21 +1,19 @@
 import React from 'react';
 import { Figure } from 'react-bootstrap';
 
-const MyImage = ({ title, total, imgUrl }) => {
+const Location = ({ title, total, imgUrl }) => {
     return (
         <Figure>
             <Figure.Image
-                width={171}
-                height={180}
-                alt="171x180"
+                alt={"figure " + { title }}
                 src={imgUrl}
             />
             <Figure.Caption>
-                <div>{title} Sicily</div>
+                <div>{title}</div>
                 <div>{total} Villas</div>
             </Figure.Caption>
         </Figure>
     );
 }
 
-export default MyImage;
+export default Location;

@@ -1,7 +1,7 @@
 [
   {
     "id": 1,
-    "groupId": 1,
+    "location": "North Sicily",
     "imgUrl": "/images/1.jpg",
     "name": "Villa sul Mare",
     "city": "Lentini",
@@ -25,7 +25,7 @@
   },
   {
     "id": 2,
-    "groupId": 2,
+    "location": "East Sicily",
     "imgUrl": "/images/2.jpg",
     "name": "Luxury Oasis",
     "city": "Taormina",
@@ -47,7 +47,7 @@
   },
   {
     "id": 3,
-    "groupId": 3,
+    "location": "South Sicily",
     "imgUrl": "/images/3.jpg",
     "name": "Seaview Paradise",
     "city": "Ragusa",
@@ -68,7 +68,7 @@
   },
   {
     "id": 4,
-    "groupId": 2,
+    "location": "East Sicily",
     "imgUrl": "/images/4.jpg",
     "name": "Family Getaway",
     "city": "Cefalù",
@@ -89,7 +89,7 @@
   },
   {
     "id": 5,
-    "groupId": 1,
+    "location": "North Sicily",
     "imgUrl": "/images/6.jpg",
     "name": "Countryside Retreat",
     "city": "Noto",
@@ -98,8 +98,8 @@
     "bedrooms": 2,
     "bathrooms": 1,
     "pricePerNight": 2390,
-    "checkInDate": "2023-09-15",
-    "checkOutDate": "2023-09-22",
+    "checkInDate": "2023-07-15",
+    "checkOutDate": "2023-12-22",
     "villaIdeas": [
       "Seaview",
       "Couples",
@@ -112,7 +112,7 @@
   },
   {
     "id": 6,
-    "groupId": 4,
+    "location": "West Sicily",
     "imgUrl": "/images/6.jpg",
     "name": "Tranquil Retreat",
     "city": "Mazara del Vallo",
@@ -134,7 +134,7 @@
   },
   {
     "id": 7,
-    "groupId": 3,
+    "location": "South Sicily",
     "imgUrl": "/images/7.jpg",
     "name": "Hillside Hideaway",
     "city": "Modica",
@@ -157,7 +157,7 @@
   },
   {
     "id": 8,
-    "groupId": 4,
+    "location": "West Sicily",
     "imgUrl": "/images/8.jpg",
     "name": "Cozy Cabin",
     "city": "Castellammare del Golfo",

@@ -1,23 +1,38 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react'
 import { Button, Container, Nav, Navbar as NavbarBs, Form } from "react-bootstrap"
 import { NavLink } from 'react-router-dom'
 import { Search } from "react-bootstrap-icons"
 
 const Navbar = () => {
-    const [isSearchOpen, setIsSearchOpen] = useState(false)
+    const [scrolled, setScrolled] = useState(false)
 
-    const handleClickSearch = () => {
-        setIsSearchOpen(!isSearchOpen)
-    }
+    useEffect(() => {
+        const handleScroll = () => {
+            if (window.scrollY > 1) {
+                setScrolled(true)
+            } else {
+                setScrolled(false)
+            }
+        }
+        window.addEventListener("scroll", handleScroll)
+        return () => {
+            window.removeEventListener("scroll", handleScroll)
+        }
+    }, [])
 
     return (
-        <NavbarBs sticky="top" expand="lg">
+        <NavbarBs
+            sticky="top"
+            expand="lg"
+            className={`navbar-custom${scrolled ? ' scrolled' : ''}`}
+        >
             <NavbarBs.Toggle aria-controls="navbarScroll" />
             <NavbarBs.Brand to="/" as={NavLink}>LOGO</NavbarBs.Brand>
             <NavbarBs.Collapse id="navbarScroll">
                 <Nav
                     style={{ maxHeight: '300px' }}
-                    navbarScroll>
+                    navbarScroll
+                >
                     <Nav.Link to="/destinations" as={NavLink}>
                         Destinations
                     </Nav.Link>
@@ -42,9 +57,11 @@ const Navbar = () => {
                 </Nav>
                 <Search size={23} />
             </NavbarBs.Collapse>
-            <Button variant='outlined'>Login</Button>
+            <Button variant='outlined' className="login-button">
+                Login
+            </Button>
         </NavbarBs>
-    );
+    )
 }
 
 export default Navbar

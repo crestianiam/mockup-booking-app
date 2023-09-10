@@ -1,9 +1,9 @@
 import React from 'react';
 import { Card } from 'react-bootstrap';
 
-const IconBox = ({ title, text, children }) => {
+const Benefit = ({ title, text, children }) => {
     return (
-        <Card className='border-0'>
+        <Card className='border'>
             {children}
             <Card.Body>
                 <Card.Title>{title}</Card.Title>
@@ -15,4 +15,4 @@ const IconBox = ({ title, text, children }) => {
     );
 }
 
-export default IconBox;
+export default Benefit;

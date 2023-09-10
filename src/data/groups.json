@@ -2,41 +2,25 @@
     {
         "id": 1,
         "imgUrl": "/images/north.jpg",
-        "location": "North",
-        "airports": [
-            "Palermo",
-            "Messina"
-        ],
+        "location": "North Sicily",
         "total": "2"
     },
     {
         "id": 2,
         "imgUrl": "/images/east.jpg",
-        "location": "East",
-        "airports": [
-            "Catania",
-            "Siracusa"
-        ],
+        "location": "East Sicily",
         "total": "2"
     },
     {
         "id": 3,
         "imgUrl": "/images/south.jpg",
-        "location": "South",
-        "airports": [
-            "Ragusa",
-            "Siracusa"
-        ],
+        "location": "South Sicily",
         "total": "2"
     },
     {
         "id": 4,
         "imgUrl": "/images/west.jpg",
-        "location": "West",
-        "airports": [
-            "Agrigento",
-            "Marsala"
-        ],
+        "location": "West Sicily",
         "total": "2"
     }
 ]
