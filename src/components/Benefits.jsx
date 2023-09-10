@@ -51,7 +51,7 @@ const Benefits = () => {
                 ))}
             </Row>
         </MyContainer>
-    );
+    )
 }
 
 export default Benefits

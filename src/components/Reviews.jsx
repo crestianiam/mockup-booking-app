@@ -22,7 +22,7 @@ const Reviews = () => {
                 })}
             </Row>
         </MyContainer>
-    );
+    )
 }
 
-export default Reviews;
+export default Reviews

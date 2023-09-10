@@ -20,9 +20,9 @@ const routesData = [
   { id: 5, path: '/about', element: <About /> },
   { id: 6, path: '/journal', element: <Journal /> },
   { id: 7, path: '/contact', element: <Contact /> },
-];
+]
 
-function generateRoutes() {
+const generateRoutes = () => {
   return routesData.map((route) => (
     <Route key={route.id} path={route.path} element={route.element} />
   ))

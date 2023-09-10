@@ -45,4 +45,8 @@ export const benefitsList = [
         title: "E-Travel Pack",
         text: "All your travel and local information will be supplied in a convenient user-friendly Travel Pack.",
     },
-];
+]
+
+export const homeIntro = "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloruoloremque, ad facere provident nihil a eaque dolore ipsum libero commodi, ratione nam! Maiores, qui reiciendis!"
+export const homeDescription = " Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem natus cum obcaecati consectetur rem cumque eoslaboriosam debitis doloremque ea, atque veniam nihil esse aliquam, nemo sequi perferendis officiis voluptatem!Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem natus cum obcaecati consectetur rem cumque eoslaboriosam debitis doloremque ea, atque veniam nihil esse aliquam, nemo sequi perferendis officiis voluptatem!"
+export const destinationDescription = "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloruoloremque, ad facere provident nihil a eaque dolore ipsum libero commodi, ratione nam! Maiores, qui reiciendis! Facere provident nihil a eaque dolore ipsum libero commodi"

@@ -21,7 +21,7 @@ const Filter = ({ isOpen }) => {
         applyFilter,
         tempFilterValues,
         cancelTempFilter,
-    } = useFilter();
+    } = useFilter()
 
     return (
         <Offcanvas
@@ -55,8 +55,8 @@ const Filter = ({ isOpen }) => {
                         options={experiencesList}
                         value={experiencesList.filter((option) => tempFilterValues.experiences.includes(option.value))}
                         onChange={(selectedOptions) => {
-                            const selectedValues = selectedOptions.map((option) => option.value);
-                            toggleExperience(selectedValues);
+                            const selectedValues = selectedOptions.map((option) => option.value)
+                            toggleExperience(selectedValues)
                         }}
                         styles={{
                             control: (provided, state) => ({
@@ -158,7 +158,7 @@ const Filter = ({ isOpen }) => {
                 </div>
             </Offcanvas.Body>
         </Offcanvas>
-    );
+    )
 }
 
-export default Filter;
+export default Filter

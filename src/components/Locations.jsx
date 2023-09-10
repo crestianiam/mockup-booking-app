@@ -17,7 +17,7 @@ const Locations = () => {
                 })}
             </Row>
         </MyContainer>
-    );
+    )
 }
 
-export default Locations;
+export default Locations

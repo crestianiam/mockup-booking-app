@@ -1,11 +1,11 @@
-import React from 'react';
+import React from 'react'
 
 const Experiences = () => {
     return (
         <div>
             Experiences
         </div>
-    );
+    )
 }
 
-export default Experiences;
+export default Experiences

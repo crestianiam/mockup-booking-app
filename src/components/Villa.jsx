@@ -30,7 +30,7 @@ const Villa = ({ villa }) => {
                 </Card.Subtitle>
             </Card.Body>
         </Card>
-    );
+    )
 }
 
 export default Villa

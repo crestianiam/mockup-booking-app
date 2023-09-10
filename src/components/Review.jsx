@@ -1,5 +1,5 @@
 import React from 'react'
-import { Star, StarFill } from 'react-bootstrap-icons';
+import { Star, StarFill } from 'react-bootstrap-icons'
 
 const Review = ({ text, stars, author }) => {
 
@@ -7,7 +7,7 @@ const Review = ({ text, stars, author }) => {
         <span key={index} className="me-1">
             {index < stars ? <StarFill /> : <Star />}
         </span>
-    ));
+    ))
 
     return (
         <section>
@@ -23,7 +23,7 @@ const Review = ({ text, stars, author }) => {
                 </div>
             </div>
         </section>
-    );
+    )
 }
 
 export default Review

@@ -1,10 +1,11 @@
-import React from 'react';
+import React from 'react'
 import { Col, Image, Row, Button } from 'react-bootstrap'
 import MyContainer from '../components/MyContainer'
 import { NavLink } from 'react-router-dom'
 import Benefits from '../components/Benefits'
 import Locations from "../components/Locations"
 import Reviews from '../components/Reviews'
+import { homeIntro, homeDescription, destinationDescription } from '../data/lists'
 
 const Home = () => {
     return (
@@ -15,15 +16,11 @@ const Home = () => {
                 <Row>
                     <Col lg={6} md={12}>
                         <h2 className='title-paragraph'>
-                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloruoloremque, ad facere provident nihil a
-                            eaque dolore ipsum libero commodi, ratione nam! Maiores, qui reiciendis!
+                            {homeIntro}
                         </h2>
                         <br />
                         <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem natus cum obcaecati consectetur rem cumque eos
-                            laboriosam debitis doloremque ea, atque veniam nihil esse aliquam, nemo sequi perferendis officiis voluptatem!
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem natus cum obcaecati consectetur rem cumque eos
-                            laboriosam debitis doloremque ea, atque veniam nihil esse aliquam, nemo sequi perferendis officiis voluptatem!
+                            {homeDescription}
                         </p>
                     </Col>
                     <Col lg={6} md={12} className="d-none d-lg-block">
@@ -42,8 +39,7 @@ const Home = () => {
                     Choose your next Destinantion
                 </h2>
                 <p className='text-center'>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloruoloremque, ad facere provident nihil a
-                    eaque dolore ipsum libero commodi, ratione nam! Maiores, qui reiciendis!
+                    {destinationDescription}
                 </p>
             </MyContainer>
             <div className='mt-5'></div>
@@ -51,7 +47,7 @@ const Home = () => {
             <div className='mt-5'></div>
             <Reviews />
         </MyContainer>
-    );
+    )
 }
 
-export default Home;
+export default Home

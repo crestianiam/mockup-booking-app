@@ -16,54 +16,52 @@ const Villas = () => {
     useEffect(() => {
         const filtered = villas.filter((villa) => {
             if (filterValues.location && villa.location !== filterValues.location) {
-                return false;
+                return false
             }
 
             if (filterValues.villaIdeas.length > 0 && !filterValues.villaIdeas.every((idea) => villa.villaIdeas.includes(idea))) {
-                return false;
+                return false
             }
             /* 
                         if (filterValues.experiences.length > 0 && !filterValues.experiences.every((exp) => villa.experiences.includes(exp))) {
-                            return false;
+                            return false
                         }
             
-                        const checkInDate = new Date(filterValues.checkIn);
-                        const checkOutDate = new Date(filterValues.checkOut);
-                        const villaCheckInDate = new Date(villa.checkInDate);
-                        const villaCheckOutDate = new Date(villa.checkOutDate);
+                        const checkInDate = new Date(filterValues.checkIn)
+                        const checkOutDate = new Date(filterValues.checkOut)
+                        const villaCheckInDate = new Date(villa.checkInDate)
+                        const villaCheckOutDate = new Date(villa.checkOutDate)
             
                         if (
                             (filterValues.checkIn && villaCheckInDate < checkInDate) ||
                             (filterValues.checkOut && villaCheckOutDate > checkOutDate)
                         ) {
-                            return false;
+                            return false
                         }
             
-                        const nights = (checkOutDate - checkInDate) / (1000 * 60 * 60 * 24); // Calcola le notti
+                        const nights = (checkOutDate - checkInDate) / (1000 * 60 * 60 * 24) // Calcola le notti
             
-                        const totalPrice = nights * villa.pricePerNight;
+                        const totalPrice = nights * villa.pricePerNight
                         if (
                             (filterValues.minPrice && totalPrice < filterValues.minPrice) ||
                             (filterValues.maxPrice && totalPrice > filterValues.maxPrice)
                         ) {
-                            return false;
+                            return false
                         }
             
-                        const totalGuests = filterValues.adults + filterValues.childrens + filterValues.infants;
+                        const totalGuests = filterValues.adults + filterValues.childrens + filterValues.infants
                         if (totalGuests > villa.seats) {
-                            return false;
+                            return false
                         }
             
                         if (filterValues.bedrooms && villa.bedrooms < filterValues.bedrooms) {
-                            return false;
+                            return false
                         }
              */
-            return true;
-        });
-        setFilteredVillas(filtered);
-    }, [filterValues]);
-
-    console.log(filteredVillas);
+            return true
+        })
+        setFilteredVillas(filtered)
+    }, [filterValues])
 
     return (
         <MyContainer>
@@ -78,7 +76,7 @@ const Villas = () => {
                 ))}
             </Row>
         </MyContainer>
-    );
-};
+    )
+}
 
-export default Villas;
+export default Villas

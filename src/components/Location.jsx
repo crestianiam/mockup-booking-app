@@ -1,5 +1,5 @@
-import React from 'react';
-import { Figure } from 'react-bootstrap';
+import React from 'react'
+import { Figure } from 'react-bootstrap'
 
 const Location = ({ title, total, imgUrl }) => {
     return (
@@ -13,7 +13,7 @@ const Location = ({ title, total, imgUrl }) => {
                 <div>{total} Villas</div>
             </Figure.Caption>
         </Figure>
-    );
+    )
 }
 
-export default Location;
+export default Location

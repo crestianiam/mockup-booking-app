@@ -1,5 +1,5 @@
-import React from 'react';
-import { Card } from 'react-bootstrap';
+import React from 'react'
+import { Card } from 'react-bootstrap'
 
 const Benefit = ({ title, text, children }) => {
     return (
@@ -12,7 +12,7 @@ const Benefit = ({ title, text, children }) => {
                 </Card.Text>
             </Card.Body>
         </Card>
-    );
+    )
 }
 
-export default Benefit;
+export default Benefit

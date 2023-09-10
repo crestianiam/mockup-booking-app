@@ -1,5 +1,5 @@
-import React, { createContext, useContext, useState } from "react";
-import Filter from "../components/Filter";
+import React, { createContext, useContext, useState } from "react"
+import Filter from "../components/Filter"
 import { getTodayDate, getTomorrowDate } from "../utilities/functions"
 
 const defaultFilterValues = {
