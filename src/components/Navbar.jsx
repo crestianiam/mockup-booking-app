@@ -27,7 +27,7 @@ const Navbar = () => {
             className={`navbar-custom${scrolled ? ' scrolled' : ''}`}
         >
             <NavbarBs.Toggle aria-controls="navbarScroll" />
-            <NavbarBs.Brand to="/" as={NavLink}>LOGO</NavbarBs.Brand>
+            <NavbarBs.Brand to="/" as={NavLink}>HOME</NavbarBs.Brand>
             <NavbarBs.Collapse id="navbarScroll">
                 <Nav
                     style={{ maxHeight: '300px' }}
