@@ -75,8 +75,21 @@ body {
   background-color: var(--clr-yellow);
 }
 
+.bg-grey-ligth {
+  background-color: var(--clr-grey);
+}
+
 .bg-blue {
   background-color: var(--clr-blue);
+}
+
+.yellow-hover:hover {
+  background-color: var(--clr-grey-light);
+  /* Cambia il colore al passaggio del mouse */
+}
+
+.cursor-pointer {
+  cursor: pointer;
 }
 
 .w-md-100 {

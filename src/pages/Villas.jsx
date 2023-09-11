@@ -97,11 +97,11 @@ const Villas = () => {
     return (
         <MyContainer>
             <div className="d-flex justify-content-between">
-                <Button className="bg-yellow rounded-0 mb-4 border-0" onClick={openFilter}>
+                <Button className="bg-grey-ligth text-body yellow-hover rounded-0 mb-4 border-0" onClick={openFilter}>
                     Filter
                 </Button>
                 <Form.Group className="mb-3">
-                    <Form.Select className='rounded-0'
+                    <Form.Select className='rounded-0 bg-grey-ligth yellow-hover text-body cursor-pointer'
                         value={currentSort}
                         onChange={(e) => handleSortChange(e.target.value)}
                     >
