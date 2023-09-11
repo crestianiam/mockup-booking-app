@@ -15,7 +15,7 @@ export const reviewsList = [
     {
         id: 0,
         author: "Peter Maters",
-        text: "We thoroughly enhoyed our holiday in Sicily and were very pleased with our stay ad Alesa.Domineco were always quick to respond and very helpful.",
+        text: "We thoroughly enhoyed our holiday in Sicily and were very pleased with our stay ad Alesa.Domineco were always quick to respond and very helpful. Quiet beaches, fresh, fresh seafood and impressive monuments.",
         stars: 4
     },
     {

@@ -22,21 +22,27 @@ const Home = () => {
                         <p>
                             {homeDescription}
                         </p>
+                        <div>
+                            <Button as={NavLink} to="/villas" className="bg-yellow rounded-0 border-0 d-lg-none">
+                                Villas In Sicily
+                            </Button>
+                            <NavLink to="/villas" as="div" className='d-none d-lg-inline-flex align-items-center justify-space-between text-decoration-none text-body mt-5'>
+                                <div className='button-line me-2'></div>
+                                <div>Villas In Sicily</div>
+                            </NavLink>
+                        </div>
                     </Col>
                     <Col lg={6} md={12} className="d-none d-lg-block">
-                        <Image src='/images/map.jpg' alt='homepage-image' fluid />
+                        <Image src='/images/sicily.png' alt='homepage-image' fluid />
                     </Col>
                 </Row>
             </MyContainer>
-            <Button as={NavLink} to="/villas" className="bg-yellow rounded-0 border-0">
-                Villas In Sicily
-            </Button>
             <div className='mt-5'></div>
             <Benefits />
             <div className='mt-5'></div>
             <MyContainer>
                 <h2 className='title-paragraph text-center'>
-                    Choose your next Destinantion
+                    Choose your next <span className='underline-blue'>Destinantion</span>
                 </h2>
                 <p className='text-center'>
                     {destinationDescription}
