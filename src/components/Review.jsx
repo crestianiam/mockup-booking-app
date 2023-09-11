@@ -5,7 +5,7 @@ const Review = ({ text, stars, author }) => {
 
     const showStars = Array.from({ length: 5 }, (_, index) => (
         <span key={index} className="me-1">
-            {index < stars ? <StarFill /> : <Star />}
+            {index < stars ? <StarFill className='clr-yellow' /> : <Star className='clr-yellow' />}
         </span>
     ))
 

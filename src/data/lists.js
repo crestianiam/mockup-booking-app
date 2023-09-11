@@ -1,4 +1,4 @@
-export const villaIdeasList = ["Pool", "Luxury", "Couples", "Large", "Family"]
+export const villaIdeasList = ["Pool", "Luxury", "Seaview", "Couples", "Large", "Family"]
 
 export const experiencesList = [
     { label: "Cooking experiences", value: "Cooking experiences" },
@@ -8,6 +8,8 @@ export const experiencesList = [
 ]
 
 export const locationsList = ["North Sicily", "East Sicily", "South Sicily", "West Sicily"]
+
+export const sortList = ["Increasing Price", "Decreasing Price", "Name", "Bedrooms"]
 
 export const reviewsList = [
     {

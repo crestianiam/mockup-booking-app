@@ -45,13 +45,27 @@ export function FilterProvider({ children }) {
         setTempFilterValues(newFilter)
     }
 
+
     const toggleVillaIdea = (value) => {
-        const updatedFilter = { ...tempFilterValues }
+        //bug fixed
+        /* const updatedFilter = { ...tempFilterValues }
         if (updatedFilter.villaIdeas.includes(value)) {
             updatedFilter.villaIdeas = updatedFilter.villaIdeas.filter(item => item !== value)
         } else {
             updatedFilter.villaIdeas.push(value)
         }
+        updateTempFilter(updatedFilter) */
+        const updatedFilter = {
+            ...tempFilterValues,
+            villaIdeas: [...tempFilterValues.villaIdeas],
+        }
+
+        if (updatedFilter.villaIdeas.includes(value)) {
+            updatedFilter.villaIdeas = updatedFilter.villaIdeas.filter((item) => item !== value)
+        } else {
+            updatedFilter.villaIdeas.push(value)
+        }
+
         updateTempFilter(updatedFilter)
     }
 
@@ -80,21 +94,30 @@ export function FilterProvider({ children }) {
     }
 
     const updateAdults = (value) => {
-        const updatedFilter = { ...tempFilterValues }
-        updatedFilter.adults = value
-        updateTempFilter(updatedFilter)
+        value = parseInt(value, 10)
+        if (!isNaN(value) && value >= 0) {
+            const updatedFilter = { ...tempFilterValues }
+            updatedFilter.adults = value
+            updateTempFilter(updatedFilter)
+        }
     }
 
     const updateChildrens = (value) => {
-        const updatedFilter = { ...tempFilterValues }
-        updatedFilter.childrens = value
-        updateTempFilter(updatedFilter)
+        value = parseInt(value, 10)
+        if (!isNaN(value) && value >= 0) {
+            const updatedFilter = { ...tempFilterValues }
+            updatedFilter.childrens = value
+            updateTempFilter(updatedFilter)
+        }
     }
 
     const updateInfants = (value) => {
-        const updatedFilter = { ...tempFilterValues }
-        updatedFilter.infants = value
-        updateTempFilter(updatedFilter)
+        value = parseInt(value, 10)
+        if (!isNaN(value) && value >= 0) {
+            const updatedFilter = { ...tempFilterValues }
+            updatedFilter.infants = value
+            updateTempFilter(updatedFilter)
+        }
     }
 
     const updateMinPrice = (value) => {
@@ -116,8 +139,8 @@ export function FilterProvider({ children }) {
     }
 
     const resetFilterValues = () => {
-        setTempFilterValues(defaultFilterValues)
         setFilterValues(defaultFilterValues)
+        setTempFilterValues(defaultFilterValues)
     }
 
     const applyFilter = () => {

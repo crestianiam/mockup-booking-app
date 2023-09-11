@@ -10,7 +10,7 @@
     "bedrooms": 3,
     "bathrooms": 2,
     "pricePerNight": 250,
-    "checkIn": "2023-08-15",
+    "checkIn": "2023-09-11",
     "checkOut": "2023-10-22",
     "villaIdeas": [
       "Pool",
@@ -35,8 +35,8 @@
     "bedrooms": 4,
     "bathrooms": 3,
     "pricePerNight": 320,
-    "checkIn": "2023-09-20",
-    "checkOut": "2023-09-27",
+    "checkIn": "2023-09-11",
+    "checkOut": "2023-09-19",
     "villaIdeas": [
       "Pool",
       "Luxury",
@@ -57,8 +57,8 @@
     "bedrooms": 1,
     "bathrooms": 1,
     "pricePerNight": 130,
-    "checkIn": "2023-09-15",
-    "checkOut": "2023-09-27",
+    "checkIn": "2023-09-11",
+    "checkOut": "2023-09-18",
     "villaIdeas": [
       "Pool",
       "Couples"
@@ -78,7 +78,7 @@
     "bedrooms": 1,
     "bathrooms": 1,
     "pricePerNight": 110,
-    "checkIn": "2023-09-20",
+    "checkIn": "2023-09-11",
     "checkOut": "2023-10-27",
     "villaIdeas": [
       "Pool",
@@ -99,7 +99,7 @@
     "bedrooms": 2,
     "bathrooms": 1,
     "pricePerNight": 390,
-    "checkIn": "2023-07-15",
+    "checkIn": "2023-09-10",
     "checkOut": "2023-12-22",
     "villaIdeas": [
       "Seaview",
@@ -122,7 +122,7 @@
     "bedrooms": 2,
     "bathrooms": 1,
     "pricePerNight": 220,
-    "checkIn": "2023-09-20",
+    "checkIn": "2023-09-11",
     "checkOut": "2023-09-27",
     "villaIdeas": [
       "Pool",
@@ -144,7 +144,7 @@
     "bedrooms": 3,
     "bathrooms": 2,
     "pricePerNight": 310,
-    "checkIn": "2023-09-15",
+    "checkIn": "2023-09-11",
     "checkOut": "2023-09-22",
     "villaIdeas": [
       "Seaview",
@@ -167,8 +167,8 @@
     "bedrooms": 2,
     "bathrooms": 1,
     "pricePerNight": 250,
-    "checkIn": "2023-09-20",
-    "checkOut": "2023-09-27",
+    "checkIn": "2023-09-21",
+    "checkOut": "2023-09-24",
     "villaIdeas": [
       "Couples",
       "Family"
@@ -188,12 +188,13 @@
     "bedrooms": 3,
     "bathrooms": 2,
     "pricePerNight": 180,
-    "checkIn": "2023-08-15",
-    "checkOut": "2023-08-22",
+    "checkIn": "2023-09-11",
+    "checkOut": "2023-09-19",
     "villaIdeas": [
       "Luxury",
       "Family",
-      "Large"
+      "Large",
+      "Seaview"
     ],
     "experiences": [
       "Cooking experiences",
@@ -211,12 +212,13 @@
     "bedrooms": 4,
     "bathrooms": 3,
     "pricePerNight": 350,
-    "checkIn": "2023-08-25",
+    "checkIn": "2023-09-11",
     "checkOut": "2023-10-02",
     "villaIdeas": [
       "Pool",
       "Large",
-      "Family"
+      "Family",
+      "Seaview"
     ],
     "experiences": [
       "Sicily outdoors"
@@ -233,7 +235,7 @@
     "bedrooms": 2,
     "bathrooms": 1,
     "pricePerNight": 220,
-    "checkIn": "2023-10-05",
+    "checkIn": "2023-09-05",
     "checkOut": "2023-10-12",
     "villaIdeas": [
       "Large",
@@ -254,7 +256,7 @@
     "bedrooms": 1,
     "bathrooms": 2,
     "pricePerNight": 75,
-    "checkIn": "2023-10-18",
+    "checkIn": "2023-09-11",
     "checkOut": "2023-10-25",
     "villaIdeas": [
       "Couples",
@@ -275,7 +277,7 @@
     "bedrooms": 2,
     "bathrooms": 1,
     "pricePerNight": 160,
-    "checkIn": "2023-11-01",
+    "checkIn": "2023-09-01",
     "checkOut": "2023-11-08",
     "villaIdeas": [
       "Pool",
@@ -299,7 +301,7 @@
     "bedrooms": 4,
     "bathrooms": 3,
     "pricePerNight": 300,
-    "checkIn": "2023-11-15",
+    "checkIn": "2023-09-15",
     "checkOut": "2023-11-22",
     "villaIdeas": [
       "Couples",
@@ -320,7 +322,7 @@
     "bedrooms": 5,
     "bathrooms": 4,
     "pricePerNight": 415,
-    "checkIn": "2023-12-05",
+    "checkIn": "2023-09-05",
     "checkOut": "2023-12-12",
     "villaIdeas": [
       "Large",
@@ -342,7 +344,7 @@
     "bedrooms": 2,
     "bathrooms": 1,
     "pricePerNight": 175,
-    "checkIn": "2023-12-20",
+    "checkIn": "2023-09-20",
     "checkOut": "2023-12-27",
     "villaIdeas": [
       "Couples",

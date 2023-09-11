@@ -1,9 +1,10 @@
 import React, { useEffect, useState } from 'react'
 import Villa from '../components/Villa'
 import MyContainer from '../components/MyContainer'
-import { Row, Col, Button } from 'react-bootstrap'
+import { Row, Col, Button, Form } from 'react-bootstrap'
 import { useFilter } from '../context/FilterContext'
 import villas from "../data/villas.json"
+import { sortList } from '../data/lists'
 
 const Villas = () => {
     const {
@@ -12,6 +13,8 @@ const Villas = () => {
     } = useFilter()
 
     const [filteredVillas, setFilteredVillas] = useState([])
+    const [currentSort, setCurrentSort] = useState("Increasing Price")
+
 
     useEffect(() => {
         const filtered = villas.filter((villa) => {
@@ -63,15 +66,58 @@ const Villas = () => {
             }
             return true
         })
-        setFilteredVillas(filtered)
-    }, [filterValues])
+        const sortedVillas = filtered.sort(sortBy(currentSort))
+        setFilteredVillas(sortedVillas)
+    }, [filterValues, currentSort])
+
+    const handleSortChange = (value) => {
+        setCurrentSort(value)
+    }
+
+    const sortBy = (field) => {
+        return function (a, b) {
+            if (field === "Increasing Price") {
+                return a.pricePerNight - b.pricePerNight
+            }
+            if (field === "Decreasing Price") {
+                return b.pricePerNight - a.pricePerNight
+            }
+            if (field === "Name") {
+                if (a.name < b.name) return -1
+                if (a.name > b.name) return 1
+                return 0
+            }
+            if (field === "Bedrooms") {
+                return a.bedrooms - b.bedrooms
+            }
+            return 0
+        }
+    }
 
     return (
         <MyContainer>
-            <div className="text-center">
+            <div className="d-flex justify-content-between">
                 <Button className="bg-yellow rounded-0 mb-4 border-0" onClick={openFilter}>
                     Filter
                 </Button>
+                <Form.Group className="mb-3">
+                    <Form.Select className='rounded-0'
+                        value={currentSort}
+                        onChange={(e) => handleSortChange(e.target.value)}
+                    >
+                        {sortList.map((sort) => (
+                            <option key={sort} value={sort}>
+                                {sort}
+                            </option>
+                        ))}
+                    </Form.Select>
+                </Form.Group>
+            </div>
+            <div>
+                <h2 className='title-paragraph'>
+                    Villas in {filterValues.location}
+                </h2>
+                <p>{filteredVillas.length} results found</p>
             </div>
             <Row className="g-2">
                 {filteredVillas.map((villa) => (

@@ -3,7 +3,7 @@ import { Card } from 'react-bootstrap'
 
 const Villa = ({ villa }) => {
     return (
-        <Card style={{ width: '30rem' }}>
+        <Card >
             <Card.Img variant="top" src={villa.imgUrl} style={{ width: "100%", aspectRatio: "5/3" }} />
             <Card.Body>
                 <Card.Title>{villa.name}</Card.Title>

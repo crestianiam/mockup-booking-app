@@ -30,8 +30,9 @@ const Filter = () => {
             onHide={cancelTempFilter}
             placement="start"
             className="w-md-100"
+            onClose={cancelTempFilter}
         >
-            <Offcanvas.Header >
+            <Offcanvas.Header closeButton >
             </Offcanvas.Header>
             <Offcanvas.Body>
                 {/* villa ideas */}
