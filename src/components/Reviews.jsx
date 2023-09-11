@@ -11,7 +11,7 @@ const Reviews = () => {
             <div className="custom-bg-grey">
                 <Row className='g-1'>
                     <Col lg={4} md={12}>
-                        <div className='d-flex flex-column mb-5'>
+                        <div className='d-flex flex-column mb-4'>
                             <Quote className='clr-grey' size={48} />
                             <h2 className="title-paragraph mb-0" style={{ marginLeft: "10px" }}>What the say <span className='underline-blue'>about</span></h2>
                         </div>

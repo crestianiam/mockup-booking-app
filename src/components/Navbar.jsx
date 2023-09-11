@@ -32,6 +32,7 @@ const Navbar = () => {
                 <Nav
                     style={{ maxHeight: '300px' }}
                     navbarScroll
+                    className="mx-auto"
                 >
                     <Nav.Link to="/destinations" as={NavLink}>
                         Destinations
@@ -55,11 +56,13 @@ const Navbar = () => {
                         Contact
                     </Nav.Link>
                 </Nav>
-                <Search size={23} />
             </NavbarBs.Collapse>
-            <Button variant='outlined' className="login-button">
-                Login
-            </Button>
+            <div className="d-flex align-items-center">
+                <Search size={23} className="me-3 d-none d-lg-block" />
+                <Button variant='outlined' className="border-yellow rounded-0" disabled>
+                    Login
+                </Button>
+            </div>
         </NavbarBs>
     )
 }

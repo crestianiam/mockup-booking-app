@@ -39,7 +39,7 @@ const Benefits = () => {
             <div className="custom-bg-grey">
                 <Row className='g-2'>
                     <Col lg={4} md={12}>
-                        <h2 className='title-paragraph'>
+                        <h2 className='title-paragraph mb-4'>
                             Perché <span className='underline-blue'>scegliere</span>
                         </h2>
                     </Col>

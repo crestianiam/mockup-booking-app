@@ -12,8 +12,8 @@ const Review = ({ text, stars, author }) => {
     return (
         <section>
             <div className="mb-2">
-                <p className="fs-6 lh-1" style={{ height: "120px" }}>
-                    <i className="pe-2">{text}</i>
+                <p className="fs-6 lh-1 h-200">
+                    <i className="pe-">{text}</i>
                 </p>
                 <div className=" d-flex justify-content-between align-items-center">
                     <div className="d-flex align-items-center">
