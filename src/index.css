@@ -140,13 +140,9 @@ body {
   content: "";
   position: absolute;
   top: -20px;
-  /* Inizia 20px sopra il container */
   right: -20px;
-  /* Inizia 20px a destra del container */
   bottom: -20px;
-  /* Termina 20px sotto il container */
   left: 20px;
-  /* Termina 20px a sinistra del container */
   background-color: var(--clr-grey-light);
   z-index: -1;
   clip-path: polygon(15% 0, 100% 0, 85% 100%, 0 100%);
