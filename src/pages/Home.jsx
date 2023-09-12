@@ -27,7 +27,7 @@ const Home = () => {
                                 Villas In Sicily
                             </Button>
                             <NavLink to="/villas" as="div" className='d-none d-lg-inline-flex align-items-center justify-space-between text-decoration-none text-body mt-5'>
-                                <div className='button-line me-2'></div>
+                                <div className='btn-line-x me-2'></div>
                                 <div>Villas In Sicily</div>
                             </NavLink>
                         </div>

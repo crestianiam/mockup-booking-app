@@ -6,7 +6,7 @@ const Benefit = ({ title, text, children }) => {
             <div className='mb-2'>
                 {children}
             </div>
-            <h2>{title}</h2>
+            <h3 className="subtitle-paragraph">{title}</h3>
             <p>{text}</p>
         </div>
     )

@@ -42,7 +42,7 @@ const Filter = () => {
                             key={idea}
                             variant={tempFilterValues.villaIdeas.includes(idea) ? "primary" : "outline-primary"}
                             onClick={() => toggleVillaIdea(idea)}
-                            className="mt-2 border-0  rounded-0"
+                            className="mt-2 rounded-0"
                         >
                             {idea}
                         </Button>
@@ -63,6 +63,20 @@ const Filter = () => {
                             control: (provided, state) => ({
                                 ...provided,
                                 border: state.isFocused ? "1px solid #0069d9" : "1px solid #ced4da",
+                            }),
+                            multiValueLabel: (provided) => ({
+                                ...provided,
+                                backgroundColor: "#007bff", // color primary bootstrap
+                                color: "#fff",
+                            }),
+                            multiValueRemove: (provided) => ({
+                                ...provided,
+                                backgroundColor: "#007bff",
+                                color: "#fff",
+                                ':hover': {
+                                    backgroundColor: "#0056b3",
+                                    color: "#fff",
+                                },
                             }),
                         }}
                     />
@@ -145,14 +159,14 @@ const Filter = () => {
                 </InputGroup>
                 {/* Apply Filter e Reset Filter */}
                 <div className="text-center">
-                    <Button variant="primary" onClick={applyFilter} className="mb-3 bg-yellow rounded-0 border-0"
+                    <Button variant="primary" onClick={applyFilter} className="mb-3 bg-yellow rounded-0 border-0 py-3 px-5"
                         disabled={(tempFilterValues.checkIn > tempFilterValues.checkOut) || ((tempFilterValues.adults + tempFilterValues.childrens + tempFilterValues.infants) <= 0) || (tempFilterValues.minPrice >
                             tempFilterValues.maxPrice)}>
-                        Apply Filter
+                        APPLY FILTER
                     </Button>
                     <br />
-                    <Button variant="secondary" onClick={resetFilterValues} className="rounded-0 border-0">
-                        Reset Filter
+                    <Button variant="dark" onClick={resetFilterValues} className="mb-3 bg-yellow rounded-0 border-0 py-1 px-2">
+                        RESET FILTER
                     </Button>
                 </div>
             </Offcanvas.Body>

@@ -96,12 +96,12 @@ const Villas = () => {
 
     return (
         <MyContainer>
-            <div className="d-flex justify-content-between">
-                <Button className="bg-grey-ligth text-body yellow-hover rounded-0 mb-4 border-0" onClick={openFilter}>
+            <div className="d-flex justify-content-around d-lg-none mt-5">
+                <Button className="bg-white border-grey text-body grey-light-hover rounded-0 mb-4" onClick={openFilter} style={{ width: "50%" }}>
                     Filter
                 </Button>
-                <Form.Group className="mb-3">
-                    <Form.Select className='rounded-0 bg-grey-ligth yellow-hover text-body cursor-pointer'
+                <Form.Group style={{ width: "50%" }}>
+                    <Form.Select className='rounded-0 border-grey grey-light-hover text-body cursor-pointer'
                         value={currentSort}
                         onChange={(e) => handleSortChange(e.target.value)}
                     >
@@ -113,19 +113,50 @@ const Villas = () => {
                     </Form.Select>
                 </Form.Group>
             </div>
-            <div>
+            <div className='mt-3'>
                 <h2 className='title-paragraph'>
                     Villas in {filterValues.location}
                 </h2>
-                <p>{filteredVillas.length} results found</p>
+                <div className="d-lg-flex align-items-center mb-5">
+                    <div className='me-auto'>
+                        {filteredVillas.length} results found
+                    </div>
+                    <Form.Group className='d-none d-lg-block'>
+                        <Form.Select className='rounded-0 border-grey grey-light-hover text-body cursor-pointer'
+                            value={currentSort}
+                            onChange={(e) => handleSortChange(e.target.value)}
+                        >
+                            {sortList.map((sort) => (
+                                <option key={sort} value={sort}>
+                                    {sort}
+                                </option>
+                            ))}
+                        </Form.Select>
+                    </Form.Group>
+                </div>
             </div>
+
             <Row className="g-2">
-                {filteredVillas.map((villa) => (
-                    <Col key={villa.id} lg={6} md={12}>
-                        <Villa villa={villa} />
-                    </Col>
+                {filteredVillas.map((villa, index) => (
+                    <React.Fragment key={villa.id}>
+                        {index % 2 === 0 || index === 0 ? (
+                            <Col lg={2} md={12}>
+                                {index === 0 ? (
+                                    <div onClick={openFilter}
+                                        className='d-none d-lg-inline-flex flex-column align-items-center justify-space-between text-decoration-none text-body mt-5 cursor-pointer'>
+                                        <div className='mt-5' style={{ transform: 'rotate(-90deg)' }}>FILTER SEARCH</div>
+                                        <div className='btn-line-y  mt-5'></div>
+                                    </div>
+                                ) : null}
+                            </Col>
+                        ) : null}
+                        <Col lg={5} md={12}>
+                            <Villa villa={villa} />
+                        </Col>
+                    </React.Fragment>
                 ))}
             </Row>
+
         </MyContainer>
     )
 }
