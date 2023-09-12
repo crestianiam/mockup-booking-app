@@ -1,7 +1,12 @@
-import React from 'react'
 import { Figure } from 'react-bootstrap'
 
-const Location = ({ title, total, imgUrl }) => {
+type LocationProps = {
+    title: string,
+    total: number,
+    imgUrl: string
+}
+
+const Location = ({ title, total, imgUrl }: LocationProps) => {
     return (
         <Figure>
             <Figure.Image

@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from 'react'
-import { Button, Container, Nav, Navbar as NavbarBs, Form } from "react-bootstrap"
+import { useState, useEffect } from 'react'
+import { Button, Nav, Navbar as NavbarBs } from "react-bootstrap"
 import { NavLink } from 'react-router-dom'
 import { Search } from "react-bootstrap-icons"
 
@@ -18,7 +18,7 @@ const Navbar = () => {
         return () => {
             window.removeEventListener("scroll", handleScroll)
         }
-    }, [])
+    }, [scrolled])
 
     return (
         <NavbarBs

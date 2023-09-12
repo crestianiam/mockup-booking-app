@@ -1,7 +1,11 @@
-import React from 'react'
+import { ReactNode } from 'react'
 import { Container } from 'react-bootstrap'
 
-const MyContainer = ({ children }) => {
+type MyContainerProps = {
+    children: ReactNode
+}
+
+const MyContainer = ({ children }: MyContainerProps) => {
     return (
         <Container className='px-0'>
             {children}

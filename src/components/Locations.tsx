@@ -1,8 +1,7 @@
-import React from 'react'
-import groups from "../data/groups.json"
 import Location from './Location'
 import MyContainer from './MyContainer'
 import { Row, Col } from 'react-bootstrap'
+import groups from "../data/groups.json"
 
 const Locations = () => {
     return (

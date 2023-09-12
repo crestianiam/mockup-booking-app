@@ -1,4 +1,3 @@
-import React from 'react'
 import { Col, Image, Row, Button } from 'react-bootstrap'
 import MyContainer from '../components/MyContainer'
 import { NavLink } from 'react-router-dom'

@@ -1,11 +1,17 @@
-import React from 'react'
 import Benefit from './Benefit'
 import { Gem, Star, PeopleFill, Magic, Gift } from 'react-bootstrap-icons'
 import MyContainer from './MyContainer'
 import { Row, Col } from 'react-bootstrap'
 import { benefitsList } from '../data/lists'
+import { ReactNode } from 'react'
 
-const iconData = [
+type IconData = {
+    title: string,
+    text: string,
+    icon: ReactNode
+}
+
+const iconData: IconData[] = [
     {
         title: benefitsList[0].title,
         text: benefitsList[0].text,

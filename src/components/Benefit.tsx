@@ -1,6 +1,11 @@
-import React from 'react'
+import { ReactNode } from "react"
 
-const Benefit = ({ title, text, children }) => {
+type BenefitProps = {
+    text: string,
+    title: string,
+    children: ReactNode
+}
+const Benefit = ({ title, text, children }: BenefitProps) => {
     return (
         <div className='d-flex flex-column justify-space-between'>
             <div className='mb-2'>

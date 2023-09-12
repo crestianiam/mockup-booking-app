@@ -3,24 +3,24 @@
         "id": 1,
         "imgUrl": "/images/north.jpg",
         "location": "North Sicily",
-        "total": "4"
+        "total": 4
     },
     {
         "id": 2,
         "imgUrl": "/images/east.jpg",
         "location": "East Sicily",
-        "total": "4"
+        "total": 4
     },
     {
         "id": 3,
         "imgUrl": "/images/south.jpg",
         "location": "South Sicily",
-        "total": "4"
+        "total": 4
     },
     {
         "id": 4,
         "imgUrl": "/images/west.jpg",
         "location": "West Sicily",
-        "total": "4"
+        "total": 4
     }
 ]

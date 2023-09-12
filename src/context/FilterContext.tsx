@@ -1,8 +1,26 @@
-import React, { createContext, useContext, useState } from "react"
+import { ReactNode, createContext, useContext, useState } from "react"
 import Filter from "../components/Filter"
 import { getTodayDate, getTomorrowDate } from "../utilities/functions"
 
-const defaultFilterValues = {
+type FilterValues = {
+    villaIdeas: string[];
+    experiences: string[];
+    location: string;
+    checkIn: string;
+    checkOut: string;
+    adults: number;
+    childrens: number;
+    infants: number;
+    minPrice: number;
+    maxPrice: number;
+    bedrooms: number;
+};
+
+type FilterProviderProps = {
+    children: ReactNode
+}
+
+const defaultFilterValues: FilterValues = {
     villaIdeas: [],
     experiences: [],
     location: 'North Sicily',
@@ -16,16 +34,39 @@ const defaultFilterValues = {
     bedrooms: 1
 }
 
-const FilterContext = createContext({})
+type FilterContext = {
+    isOpen: boolean;
+    openFilter: () => void;
+    closeFilter: () => void;
+    filterValues: FilterValues;
+    applyFilter: () => void;
+    resetFilterValues: () => void;
+    tempFilterValues: FilterValues;
+    updateTempFilter: (newFilter: FilterValues) => void;
+    cancelTempFilter: () => void;
+    toggleVillaIdea: (value: string) => void;
+    toggleExperience: (value: string[]) => void;
+    updateLocation: (value: string) => void;
+    updateCheckIn: (value: string) => void;
+    updateCheckOut: (value: string) => void;
+    updateAdults: (value: string) => void;
+    updateChildrens: (value: string) => void;
+    updateInfants: (value: string) => void;
+    updateMinPrice: (value: string) => void;
+    updateMaxPrice: (value: string) => void;
+    updateBedrooms: (value: string) => void;
+};
+
+const FilterContext = createContext({} as FilterContext)
 
 export function useFilter() {
     return useContext(FilterContext)
 }
 
-export function FilterProvider({ children }) {
+export function FilterProvider({ children }: FilterProviderProps) {
     const [isOpen, setIsOpen] = useState(false)
-    const [filterValues, setFilterValues] = useState(defaultFilterValues)
-    const [tempFilterValues, setTempFilterValues] = useState(defaultFilterValues)
+    const [filterValues, setFilterValues] = useState<FilterValues>(defaultFilterValues)
+    const [tempFilterValues, setTempFilterValues] = useState<FilterValues>(defaultFilterValues)
 
     const openFilter = () => {
         setIsOpen(true)
@@ -41,12 +82,12 @@ export function FilterProvider({ children }) {
         setIsOpen(false)
     }
 
-    const updateTempFilter = (newFilter) => {
+    const updateTempFilter = (newFilter: FilterValues) => {
         setTempFilterValues(newFilter)
     }
 
 
-    const toggleVillaIdea = (value) => {
+    const toggleVillaIdea = (value: string) => {
         //bug fixed
         /* const updatedFilter = { ...tempFilterValues }
         if (updatedFilter.villaIdeas.includes(value)) {
@@ -69,72 +110,75 @@ export function FilterProvider({ children }) {
         updateTempFilter(updatedFilter)
     }
 
-    const toggleExperience = (value) => {
+    const toggleExperience = (value: string[]) => {
         const updatedFilter = { ...tempFilterValues }
         updatedFilter.experiences = [...value]
         updateTempFilter(updatedFilter)
     }
 
-    const updateLocation = (value) => {
+    const updateLocation = (value: string) => {
         const updatedFilter = { ...tempFilterValues }
         updatedFilter.location = value
         updateTempFilter(updatedFilter)
     }
 
-    const updateCheckIn = (value) => {
+    const updateCheckIn = (value: string) => {
         const updatedFilter = { ...tempFilterValues }
         updatedFilter.checkIn = value
         updateTempFilter(updatedFilter)
     }
 
-    const updateCheckOut = (value) => {
+    const updateCheckOut = (value: string) => {
         const updatedFilter = { ...tempFilterValues }
         updatedFilter.checkOut = value
         updateTempFilter(updatedFilter)
     }
 
-    const updateAdults = (value) => {
-        value = parseInt(value, 10)
-        if (!isNaN(value) && value >= 0) {
+    const updateAdults = (value: string) => {
+        const parsedValue = parseInt(value, 10)
+        if (!isNaN(parsedValue) && parsedValue >= 0) {
             const updatedFilter = { ...tempFilterValues }
-            updatedFilter.adults = value
+            updatedFilter.adults = parsedValue
             updateTempFilter(updatedFilter)
         }
     }
 
-    const updateChildrens = (value) => {
-        value = parseInt(value, 10)
-        if (!isNaN(value) && value >= 0) {
+    const updateChildrens = (value: string) => {
+        const parsedValue = parseInt(value, 10)
+        if (!isNaN(parsedValue) && parsedValue >= 0) {
             const updatedFilter = { ...tempFilterValues }
-            updatedFilter.childrens = value
+            updatedFilter.childrens = parsedValue
             updateTempFilter(updatedFilter)
         }
     }
 
-    const updateInfants = (value) => {
-        value = parseInt(value, 10)
-        if (!isNaN(value) && value >= 0) {
+    const updateInfants = (value: string) => {
+        const parsedValue = parseInt(value, 10)
+        if (!isNaN(parsedValue) && parsedValue >= 0) {
             const updatedFilter = { ...tempFilterValues }
-            updatedFilter.infants = value
+            updatedFilter.infants = parsedValue
             updateTempFilter(updatedFilter)
         }
     }
 
-    const updateMinPrice = (value) => {
+    const updateMinPrice = (value: string) => {
         const updatedFilter = { ...tempFilterValues }
-        updatedFilter.minPrice = value
+        const parsedValue = parseInt(value, 10)
+        updatedFilter.minPrice = parsedValue
         updateTempFilter(updatedFilter)
     }
 
-    const updateMaxPrice = (value) => {
+    const updateMaxPrice = (value: string) => {
         const updatedFilter = { ...tempFilterValues }
-        updatedFilter.maxPrice = value
+        const parsedValue = parseInt(value, 10)
+        updatedFilter.maxPrice = parsedValue
         updateTempFilter(updatedFilter)
     }
 
-    const updateBedrooms = (value) => {
+    const updateBedrooms = (value: string) => {
         const updatedFilter = { ...tempFilterValues }
-        updatedFilter.bedrooms = value
+        const parsedValue = parseInt(value, 10)
+        updatedFilter.bedrooms = parsedValue
         updateTempFilter(updatedFilter)
     }
 

@@ -1,7 +1,12 @@
-import React from 'react'
 import { Star, StarFill } from 'react-bootstrap-icons'
 
-const Review = ({ text, stars, author }) => {
+type ReviewProps = {
+    text: string,
+    stars: number,
+    author: string
+}
+
+const Review = ({ text, stars, author }: ReviewProps) => {
 
     const showStars = Array.from({ length: 5 }, (_, index) => (
         <span key={index} className="me-1">
