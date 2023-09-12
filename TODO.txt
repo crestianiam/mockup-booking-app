@@ -3,6 +3,3 @@ contare total villas ciclando su villas
 controlla date e functions
 menu space between e vedi su mobile 
 test su telefono
-readme file todo 
-aggiungere al repository p&d
-colori e stili

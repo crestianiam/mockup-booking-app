@@ -1,7 +1,8 @@
-# IMPORTANT FOR INTERVIEWER
+# Important for Interviewer
 
-The Villa Component: This component encompasses all the details of a villa, allowing users to experiment with the filter and witness its real-time functionality.
-Please note that, currently, the only two functional pages are "home" and "villas." Additionally, please be aware that the styling for this project is a work in progress.
+Please note that, currently, the only two functional pages are "Home" and "Villas" like required by the mockup.
+The Villa Component: This component encompasses all the details of a villa. Instead of the styling required by the mockup, it allows users to experiment with the filter and witness its real-time functionality while looking at the villa's values.
+Additionally, please be aware that the styling for this project is a work in progress.
 
 # React + Vite
 
