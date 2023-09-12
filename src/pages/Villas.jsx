@@ -135,7 +135,17 @@ const Villas = () => {
                     </Form.Group>
                 </div>
             </div>
-
+            {filteredVillas.length === 0 ? (
+                <Row className="g-2">
+                    <Col lg={2} md={12}>
+                        <div onClick={openFilter}
+                            className='d-none d-lg-inline-flex flex-column align-items-center justify-space-between text-decoration-none text-body mt-5 cursor-pointer'>
+                            <div className='mt-5' style={{ transform: 'rotate(-90deg)' }}>FILTER SEARCH</div>
+                            <div className='btn-line-y  mt-5'></div>
+                        </div>
+                    </Col>
+                </Row>
+            ) : null}
             <Row className="g-2">
                 {filteredVillas.map((villa, index) => (
                     <React.Fragment key={villa.id}>
