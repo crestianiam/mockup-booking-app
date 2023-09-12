@@ -1,7 +1,7 @@
 # Important for Interviewer
 
 Branch main: JS version
-Branch feature/ts-conversion TS version (filter in testing, some errors in fixing)
+Branch feature/ts-conversion: TS version (filter in testing, some errors in fixing)
 
 Please note that, currently, the only two functional pages are "Home" and "Villas" like required by the mockup.
 The Villa Component: This component encompasses all the details of a villa. Instead of the styling required by the mockup, it allows users to experiment with the filter and witness its real-time functionality while looking at the villa's values.
