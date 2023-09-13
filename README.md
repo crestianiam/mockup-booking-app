@@ -1,6 +1,6 @@
 # Branches and Project Info
 
-Branch main: TS version ----------------------------------------------------
+Branch main: TS version ---
 Branch version/js-only: JS version (filter in testing, some errors in fixing)
 
 Please note that, currently, the only two functional pages are "Home" and "Villas".
