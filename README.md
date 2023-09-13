@@ -6,7 +6,7 @@ Branch versione/js-only: JS version (filter in testing, some errors in fixing)
 Please note that, currently, the only two functional pages are "Home" and "Villas".
 The Villa Component: This component encompasses all the details of a villa and allows users to experiment with the filter and witness its real-time functionality while looking at the villa's values.
 Additionally, please be aware that the styling for this project is a work in progress.
-Mockup images are in public/mockup-images.
+Mockup images are in public/mockup-images..
 
 ## Getting Started
 
