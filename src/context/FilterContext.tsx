@@ -30,7 +30,7 @@ const defaultFilterValues: FilterValues = {
     childrens: 0,
     infants: 0,
     minPrice: 50,
-    maxPrice: 500,
+    maxPrice: 5000,
     bedrooms: 1
 }
 

@@ -18,7 +18,6 @@ const Villas = () => {
     const [filteredVillas, setFilteredVillas] = useState<VillaType[]>([])
     const [currentSort, setCurrentSort] = useState<SortOption>("Increasing Price")
 
-
     useEffect(() => {
         const filtered = villas.filter((villa) => {
             if (filterValues.location && villa.location !== filterValues.location) {
@@ -40,7 +39,7 @@ const Villas = () => {
                 (filterValues.checkIn && villaCheckIn > new Date(filterValues.checkIn)) ||
                 (filterValues.checkOut && villaCheckOut < new Date(filterValues.checkOut))
             ) {
-                return false;
+                return false
             }
 
             const checkInString = filterValues.checkIn;
@@ -51,10 +50,9 @@ const Villas = () => {
             let nights = 0;
 
             if (!isNaN(checkIn.getTime()) && !isNaN(checkOut.getTime())) {
-                const millisecondsPerDay = 1000 * 60 * 60 * 24;
-                nights = (checkOut.getTime() - checkIn.getTime()) / millisecondsPerDay;
+                const millisecondsPerDay = 1000 * 60 * 60 * 24
+                nights = (checkOut.getTime() - checkIn.getTime()) / millisecondsPerDay
             } else {
-                console.log("Error parsing date");
             }
 
             const totalPrice = nights * villa.pricePerNight
@@ -79,6 +77,7 @@ const Villas = () => {
         const sortedVillas = filtered.sort(sortBy(currentSort))
         setFilteredVillas(sortedVillas)
     }, [filterValues, currentSort])
+
 
     const handleSortChange = (value: string) => {
         if (sortList.includes(value as SortOption)) {
@@ -178,7 +177,6 @@ const Villas = () => {
                     </React.Fragment>
                 ))}
             </Row>
-
         </MyContainer>
     )
 }

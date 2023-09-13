@@ -23,8 +23,6 @@ const Filter = () => {
         cancelTempFilter,
     } = useFilter()
 
-    console.log(tempFilterValues.checkIn)
-
     return (
         <Offcanvas
             show={isOpen}
