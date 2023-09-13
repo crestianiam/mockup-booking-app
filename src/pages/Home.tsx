@@ -1,5 +1,4 @@
-import React from 'react'
-import { Col, Image, Row, Button } from 'react-bootstrap'
+import { Col, Image, Row, Button, Nav } from 'react-bootstrap'
 import MyContainer from '../components/MyContainer'
 import { NavLink } from 'react-router-dom'
 import Benefits from '../components/Benefits'
@@ -23,13 +22,16 @@ const Home = () => {
                             {homeDescription}
                         </p>
                         <div>
-                            <Button as={NavLink} to="/villas" className="bg-yellow rounded-0 border-0 d-lg-none">
-                                Villas In Sicily
-                            </Button>
-                            <NavLink to="/villas" as="div" className='d-none d-lg-inline-flex align-items-center justify-space-between text-decoration-none text-body mt-5'>
-                                <div className='btn-line-x me-2'></div>
-                                <div>Villas In Sicily</div>
-                            </NavLink>
+                            <Nav.Link as={NavLink} to="/villas">
+                                <Button className="bg-yellow rounded-0 border-0 d-lg-none">
+                                    Villas In Sicily
+                                </Button>
+                                <div className='d-none d-lg-inline-flex align-items-center justify-space-between text-decoration-none text-body mt-5'>
+                                    <div className='btn-line-x me-2'></div>
+                                    <div>Villas In Sicily</div>
+                                </div>
+                            </Nav.Link>
+
                         </div>
                     </Col>
                     <Col lg={6} md={12} className="d-none d-lg-block">

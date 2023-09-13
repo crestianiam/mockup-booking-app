@@ -3,3 +3,11 @@ contare total villas ciclando su villas
 controlla date e functions
 menu space between e vedi su mobile 
 test su telefono
+useeffect navbar funziona senza scrolled come paraemtro, vedi
+warning react tipo dependency useeffect
+variabile implicita globale
+villatype using interface??
+
+
+main
+disabled checkin = checkout

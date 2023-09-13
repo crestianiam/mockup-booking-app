@@ -1,4 +1,3 @@
-import React from 'react'
 import MyContainer from './MyContainer'
 import { Row, Col } from "react-bootstrap"
 import Review from './Review'

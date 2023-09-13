@@ -9,7 +9,7 @@
     "seats": 7,
     "bedrooms": 3,
     "bathrooms": 2,
-    "pricePerNight": 250,
+    "pricePerNight": 170,
     "checkIn": "2023-09-11",
     "checkOut": "2023-10-22",
     "villaIdeas": [
@@ -34,7 +34,7 @@
     "seats": 8,
     "bedrooms": 4,
     "bathrooms": 3,
-    "pricePerNight": 320,
+    "pricePerNight": 200,
     "checkIn": "2023-09-11",
     "checkOut": "2023-09-19",
     "villaIdeas": [
@@ -56,7 +56,7 @@
     "seats": 2,
     "bedrooms": 1,
     "bathrooms": 1,
-    "pricePerNight": 130,
+    "pricePerNight": 65,
     "checkIn": "2023-09-11",
     "checkOut": "2023-09-18",
     "villaIdeas": [
@@ -77,7 +77,7 @@
     "seats": 2,
     "bedrooms": 1,
     "bathrooms": 1,
-    "pricePerNight": 110,
+    "pricePerNight": 55,
     "checkIn": "2023-09-11",
     "checkOut": "2023-10-27",
     "villaIdeas": [
@@ -98,7 +98,7 @@
     "seats": 4,
     "bedrooms": 2,
     "bathrooms": 1,
-    "pricePerNight": 390,
+    "pricePerNight": 85,
     "checkIn": "2023-09-10",
     "checkOut": "2023-12-22",
     "villaIdeas": [
@@ -121,7 +121,7 @@
     "seats": 4,
     "bedrooms": 2,
     "bathrooms": 1,
-    "pricePerNight": 220,
+    "pricePerNight": 90,
     "checkIn": "2023-09-11",
     "checkOut": "2023-09-27",
     "villaIdeas": [
@@ -143,7 +143,7 @@
     "seats": 6,
     "bedrooms": 3,
     "bathrooms": 2,
-    "pricePerNight": 310,
+    "pricePerNight": 100,
     "checkIn": "2023-09-11",
     "checkOut": "2023-09-22",
     "villaIdeas": [
@@ -166,7 +166,7 @@
     "seats": 4,
     "bedrooms": 2,
     "bathrooms": 1,
-    "pricePerNight": 250,
+    "pricePerNight": 75,
     "checkIn": "2023-09-21",
     "checkOut": "2023-09-24",
     "villaIdeas": [
@@ -187,7 +187,7 @@
     "seats": 6,
     "bedrooms": 3,
     "bathrooms": 2,
-    "pricePerNight": 180,
+    "pricePerNight": 130,
     "checkIn": "2023-09-11",
     "checkOut": "2023-09-19",
     "villaIdeas": [
@@ -211,7 +211,7 @@
     "seats": 8,
     "bedrooms": 4,
     "bathrooms": 3,
-    "pricePerNight": 350,
+    "pricePerNight": 140,
     "checkIn": "2023-09-11",
     "checkOut": "2023-10-02",
     "villaIdeas": [
@@ -234,7 +234,7 @@
     "seats": 4,
     "bedrooms": 2,
     "bathrooms": 1,
-    "pricePerNight": 220,
+    "pricePerNight": 120,
     "checkIn": "2023-09-05",
     "checkOut": "2023-10-12",
     "villaIdeas": [
@@ -276,7 +276,7 @@
     "seats": 4,
     "bedrooms": 2,
     "bathrooms": 1,
-    "pricePerNight": 160,
+    "pricePerNight": 130,
     "checkIn": "2023-09-01",
     "checkOut": "2023-11-08",
     "villaIdeas": [
@@ -300,8 +300,8 @@
     "seats": 8,
     "bedrooms": 4,
     "bathrooms": 3,
-    "pricePerNight": 300,
-    "checkIn": "2023-09-15",
+    "pricePerNight": 160,
+    "checkIn": "2023-09-05",
     "checkOut": "2023-11-22",
     "villaIdeas": [
       "Couples",
@@ -321,7 +321,7 @@
     "seats": 10,
     "bedrooms": 5,
     "bathrooms": 4,
-    "pricePerNight": 415,
+    "pricePerNight": 200,
     "checkIn": "2023-09-05",
     "checkOut": "2023-12-12",
     "villaIdeas": [
@@ -343,7 +343,7 @@
     "seats": 4,
     "bedrooms": 2,
     "bathrooms": 1,
-    "pricePerNight": 175,
+    "pricePerNight": 100,
     "checkIn": "2023-09-20",
     "checkOut": "2023-12-27",
     "villaIdeas": [

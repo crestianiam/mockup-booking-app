@@ -5,6 +5,9 @@ import { Row, Col, Button, Form } from 'react-bootstrap'
 import { useFilter } from '../context/FilterContext'
 import villas from "../data/villas.json"
 import { sortList } from '../data/lists'
+import { VillaType } from '../components/Villa'
+
+type SortOption = "Increasing Price" | "Decreasing Price" | "Name" | "Bedrooms";
 
 const Villas = () => {
     const {
@@ -12,9 +15,8 @@ const Villas = () => {
         filterValues,
     } = useFilter()
 
-    const [filteredVillas, setFilteredVillas] = useState([])
-    const [currentSort, setCurrentSort] = useState("Increasing Price")
-
+    const [filteredVillas, setFilteredVillas] = useState<VillaType[]>([])
+    const [currentSort, setCurrentSort] = useState<SortOption>("Increasing Price")
 
     useEffect(() => {
         const filtered = villas.filter((villa) => {
@@ -30,25 +32,31 @@ const Villas = () => {
                 return false
             }
 
-            const villaCheckIn = new Date(villa.checkIn)
-            const villaCheckOut = new Date(villa.checkOut)
-
-            const formattedVillaCheckIn = villaCheckIn.toISOString().split('T')[0]
-            const formattedVillaCheckOut = villaCheckOut.toISOString().split('T')[0]
+            const villaCheckIn = new Date(villa.checkIn);
+            const villaCheckOut = new Date(villa.checkOut);
 
             if (
-                (filterValues.checkIn && formattedVillaCheckIn > filterValues.checkIn) ||
-                (filterValues.checkOut && formattedVillaCheckOut < filterValues.checkOut)
+                (filterValues.checkIn && villaCheckIn > new Date(filterValues.checkIn)) ||
+                (filterValues.checkOut && villaCheckOut < new Date(filterValues.checkOut))
             ) {
                 return false
             }
 
-            const checkIn = new Date(filterValues.checkIn)
-            const checkOut = new Date(filterValues.checkOut)
+            const checkInString = filterValues.checkIn;
+            const checkOutString = filterValues.checkOut;
 
-            const nights = (checkOut - checkIn) / (1000 * 60 * 60 * 24) // Calcola le notti
+            const checkIn = new Date(checkInString);
+            const checkOut = new Date(checkOutString);
+            let nights = 0;
+
+            if (!isNaN(checkIn.getTime()) && !isNaN(checkOut.getTime())) {
+                const millisecondsPerDay = 1000 * 60 * 60 * 24
+                nights = (checkOut.getTime() - checkIn.getTime()) / millisecondsPerDay
+            } else {
+            }
 
             const totalPrice = nights * villa.pricePerNight
+
             if (
                 (filterValues.minPrice && totalPrice < filterValues.minPrice) ||
                 (filterValues.maxPrice && totalPrice > filterValues.maxPrice)
@@ -70,12 +78,15 @@ const Villas = () => {
         setFilteredVillas(sortedVillas)
     }, [filterValues, currentSort])
 
-    const handleSortChange = (value) => {
-        setCurrentSort(value)
+
+    const handleSortChange = (value: string) => {
+        if (sortList.includes(value as SortOption)) {
+            setCurrentSort(value as SortOption);
+        }
     }
 
-    const sortBy = (field) => {
-        return function (a, b) {
+    const sortBy = (field: string) => {
+        return function (a: VillaType, b: VillaType) {
             if (field === "Increasing Price") {
                 return a.pricePerNight - b.pricePerNight
             }
@@ -124,7 +135,7 @@ const Villas = () => {
                     <Form.Group className='d-none d-lg-block'>
                         <Form.Select className='rounded-0 border-grey grey-light-hover text-body cursor-pointer'
                             value={currentSort}
-                            onChange={(e) => handleSortChange(e.target.value)}
+                            onChange={(e) => handleSortChange(e.target.value as SortOption)}
                         >
                             {sortList.map((sort) => (
                                 <option key={sort} value={sort}>
@@ -166,7 +177,6 @@ const Villas = () => {
                     </React.Fragment>
                 ))}
             </Row>
-
         </MyContainer>
     )
 }

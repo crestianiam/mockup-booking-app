@@ -1,7 +1,27 @@
-import React from 'react'
 import { Card } from 'react-bootstrap'
 
-const Villa = ({ villa }) => {
+export type VillaType = {
+    id: number;
+    location: string;
+    imgUrl: string;
+    name: string;
+    city: string;
+    province: string;
+    seats: number;
+    bedrooms: number;
+    bathrooms: number;
+    pricePerNight: number;
+    checkIn: string;
+    checkOut: string;
+    villaIdeas: string[];
+    experiences: string[];
+}
+
+type VillaProps = {
+    villa: VillaType
+}
+
+const Villa = ({ villa }: VillaProps) => {
     return (
         <Card >
             <Card.Img variant="top" src={villa.imgUrl} style={{ width: "100%", aspectRatio: "5/3" }} />

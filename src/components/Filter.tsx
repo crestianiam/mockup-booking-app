@@ -1,4 +1,3 @@
-import React from "react"
 import { Offcanvas, Button, Form, InputGroup } from "react-bootstrap"
 import { useFilter } from "../context/FilterContext"
 import Select from "react-select"
@@ -160,7 +159,7 @@ const Filter = () => {
                 {/* Apply Filter e Reset Filter */}
                 <div className="text-center">
                     <Button variant="primary" onClick={applyFilter} className="mb-3 bg-yellow rounded-0 border-0 py-3 px-5"
-                        disabled={(tempFilterValues.checkIn > tempFilterValues.checkOut) || ((tempFilterValues.adults + tempFilterValues.childrens + tempFilterValues.infants) <= 0) || (tempFilterValues.minPrice >
+                        disabled={(tempFilterValues.checkIn >= tempFilterValues.checkOut) || ((tempFilterValues.adults + tempFilterValues.childrens + tempFilterValues.infants) <= 0) || (tempFilterValues.minPrice >
                             tempFilterValues.maxPrice)}>
                         APPLY FILTER
                     </Button>

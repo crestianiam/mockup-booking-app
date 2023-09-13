@@ -1,6 +1,21 @@
+type Benefit = {
+    title: string;
+    text: string;
+};
+type Experience = {
+    label: string;
+    value: string;
+};
+type Review = {
+    id: number;
+    author: string;
+    text: string;
+    stars: number;
+};
+
 export const villaIdeasList = ["Pool", "Luxury", "Seaview", "Couples", "Large", "Family"]
 
-export const experiencesList = [
+export const experiencesList: Experience[] = [
     { label: "Cooking experiences", value: "Cooking experiences" },
     { label: "Sicily outdoors", value: "Sicily outdoors" },
     { label: "Fantastic garden", value: "Fantastic garden" },
@@ -9,9 +24,11 @@ export const experiencesList = [
 
 export const locationsList = ["North Sicily", "East Sicily", "South Sicily", "West Sicily"]
 
-export const sortList = ["Increasing Price", "Decreasing Price", "Name", "Bedrooms"]
+type SortOption = "Increasing Price" | "Decreasing Price" | "Name" | "Bedrooms"
 
-export const reviewsList = [
+export const sortList: SortOption[] = ["Increasing Price", "Decreasing Price", "Name", "Bedrooms"]
+
+export const reviewsList: Review[] = [
     {
         id: 0,
         author: "Peter Maters",
@@ -26,7 +43,7 @@ export const reviewsList = [
     },
 ]
 
-export const benefitsList = [
+export const benefitsList: Benefit[] = [
     {
         title: "High Quality Assured",
         text: "A stunning collection of high-quality villas suitable for all group sizes in some of Sicily's top locations.",
