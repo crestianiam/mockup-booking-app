@@ -52,7 +52,6 @@ const Villas = () => {
             if (!isNaN(checkIn.getTime()) && !isNaN(checkOut.getTime())) {
                 const millisecondsPerDay = 1000 * 60 * 60 * 24
                 nights = (checkOut.getTime() - checkIn.getTime()) / millisecondsPerDay
-            } else {
             }
 
             const totalPrice = nights * villa.pricePerNight
@@ -94,9 +93,7 @@ const Villas = () => {
                 return b.pricePerNight - a.pricePerNight
             }
             if (field === "Name") {
-                if (a.name < b.name) return -1
-                if (a.name > b.name) return 1
-                return 0
+                return a.name < b.name ? -1 : a.name > b.name ? 1 : 0
             }
             if (field === "Bedrooms") {
                 return a.bedrooms - b.bedrooms
